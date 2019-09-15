@@ -3,6 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>Cinema</title>
+    <style>
+        .table {
+            border: 4px solid black; /* Параметры границы */
+        }
+    </style>
 </head>
 
 <body>
@@ -13,16 +18,16 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">ЗАКАЗАТЬ БИЛЕТ</a> 
+                    <a href="#buy_ticket">ЗАКАЗАТЬ БИЛЕТ</a> 
                 </li>
                 <li>
-                    <a href="#">ПРЕИМУЩЕСТВА</a>
+                    <a href="#advantages">ПРЕИМУЩЕСТВА</a>
                 </li>
                 <li>
-                    <a href="#">ФИЛЬМЫ</a>
+                    <a href="#movies">ФИЛЬМЫ</a>
                 </li>
                 <li>
-                    <a href="#">КОНТАКТЫ</a>
+                    <a href="#contacts">КОНТАКТЫ</a>
                 </li>
             </ul>
         </nav>
@@ -32,8 +37,8 @@
     </header>
 
     <section>
-        <h1>
-            Закажите билет в кино
+        <h1 id="buy_ticket">
+                Закажите билет в кино
         </h1>
         <b>
             Всем покупателям подарок!
@@ -49,8 +54,8 @@
     </section>
 
     <section>
-        <h2>
-            Почему мы?
+        <h2 id="advantages">
+                Почему мы?
         </h2>
             
         <div>
@@ -77,11 +82,11 @@
     </section>
 
     <section>
-        <h2>
-            Выберите фильм
+        <h2 id="movies">
+                Выберите фильм
         </h2>
 
-        <p>Начало сеанса 	Название фильма 	Жанр<br>
+        <p class="table">Начало сеанса 	Название фильма 	Жанр<br>
         10:00	<a href="https://www.kinopoisk.ru/film/1008445/" title="Человек-паук: Вдали от дома" target="_blank">Человек-паук: Вдали от дома</a>	фантастика, боевик, приключения<br>
         12:00	<a href="https://www.kinopoisk.ru/film/1122114/" title="Собачья жизнь 2" target="_blank">Собачья жизнь 2</a>	фэнтези, драма, комедия<br>
         14:00	<a href="https://www.kinopoisk.ru/film/846824/" title="История игрушек 4" target="_blank">История игрушек 4</a>	мультфильм, фэнтези, комедия<br>
