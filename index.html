@@ -4,11 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Cinema</title>
+    <link rel="stylesheet" href="css/main.css">
     <style>
-        .table {
-            border: 4px solid black;
-            /* Параметры границы */
-        }
         nav a {
             text-transform: uppercase
         }
@@ -94,103 +91,87 @@
     </section>
 
     <section>
-        <h2 id="movies">
-            Выберите фильм
-        </h2>
+        <div class="movie-list">
+            <h2 id="movies" class="movie-list__header">
+                Выберите фильм
+            </h2>
 
-        <table class="table" cellpadding="5" cellspacing="10">
-            <thead>
-                <tr>
-                    <th>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>
+                            Time
+                        </th>
+                        <th>
+                            Stuff that will happen
+                        </th>
+                        <th>
 
-                    </th>
-                    <th>
-                        Начало сеанса
-                    </th>
-                    <th>
-                        Название фильма
-                    </th>
-                    <th>
-                        Жанр
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            10am - 12 pm
+                        </td>
+                        <td>
+                            Introduction and presentations about Envato
+                        </td>
+                        <td>
 
-                    </td>
-                    <td>
-                        10:00
-                    </td>
-                    <td>
-                        <a href="https://www.kinopoisk.ru/film/1008445/" title="Человек-паук: Вдали от дома"
-                            target="_blank">
-                            Человек-паук: Вдали от дома
-                        </a>
-                    </td>
-                    <td>
-                        фантастика, боевик, приключения
-                    </td>
-                </tr>
-                <td>
+                        </td>
+                    </tr>
 
-                </td>
-                <td>
-                    12:00
-                </td>
-                <td>
-                    <a href="https://www.kinopoisk.ru/film/1122114/" title="Собачья жизнь 2" target="_blank">
-                        Собачья жизнь 2
-                    </a>
-                </td>
-                <td>
-                    фэнтези, драма, комедия
-                </td>
-                <tr>
-                    <td>
+                    <tr>
+                        <td>
+                            12pm - 02pm
+                        </td>
+                        <td>
+                            Sessions by honorable guests and Speakers
+                        </td>
+                        <td>
 
-                    </td>
-                    <td>
-                        14:00
-                    </td>
-                    <td>
-                        <a href="https://www.kinopoisk.ru/film/846824/" title="История игрушек 4" target="_blank">
-                            История игрушек 4
-                        </a>
-                    </td>
-                    <td>
-                        мультфильм, фэнтези, комедия
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                        </td>
+                    </tr>
 
-                    </td>
-                    <td>
-                        16:00
-                    </td>
-                    <td>
-                        <a href="https://www.kinopoisk.ru/film/693730/" title="Люди в черном: Интернэшнл"
-                            target="_blank">
-                            Люди в черном: Интернэшнл
-                        </a>
-                    </td>
-                    <td>
-                        фантастика, боевик, комедия
-                    </td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="4">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem
-                        repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi
-                        pariatur quaerat quam, qui quibusdam sunt!
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
+                    <tr>
+                        <td>
+                            02pm - 03pm
+                        </td>
+                        <td>
+                            Break and Mingle time with the authors
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            03pm - 05pm
+                        </td>
+                        <td>
+                            Portfolio Review, Rewards and Ending Presentation
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam
+                            rem
+                            repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia
+                            nisi
+                            pariatur quaerat quam, qui quibusdam sunt!
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </section>
 
     <section>
@@ -246,13 +227,13 @@
     <section>
         Map-1920x450
     </section>
-    
+
     <footer id="contacts" style="margin: 10px 10px 10px 0">
         Соцсети
     </footer>
 
     <form style="width: 100px" action="/order.php" method="GET">
-        <input type="" value="" name="client_name" placeholder="Имя*" required/>
+        <input type="" value="" name="client_name" placeholder="Имя*" required />
         <input type="email" placeholder="email" name="email" required>
         <select name="place" required>
             <option>Выбор1</option>
@@ -266,20 +247,20 @@
             <option>Выбор9</option>
             <option>Выбор10</option>
         </select>
-        
+
         <input id="first" type="radio" value="1" name="some" />
         <label for="first">Выбор 1</label>
         <input id="second" type="radio" value="2" name="some" />
         <label for="second">Выбор 2</label>
-        
+
         <textarea placeholder="Комментарий" name="textarea"></textarea>
-        
+
         <input id="agree" type="checkbox" name="client_agreed" value="yes" required />
         <label for="agree">Я согласен на обработку персональных данных</label>
-        
+
         <button>Заказать</button>
-        
-        <input type="file" name="file"/>
+
+        <input type="file" name="file" />
     </form>
 
 </body>
