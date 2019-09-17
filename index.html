@@ -5,20 +5,16 @@
     <meta charset="utf-8">
     <title>Cinema</title>
     <link rel="stylesheet" href="css/main.css">
-    <style>
-        nav a {
-            text-transform: uppercase
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <div style="background-color: blue">
-            <a href="https://university.innopolis.ru" target="_blank"><img src="images/logo.png"
-                    alt="Логотип Университета Иннополис"></a>
+        <div class="logo">
+            <a href="https://university.innopolis.ru" target="_blank">
+                <img src="images/logo.png" alt="Логотип Университета Иннополис">
+            </a>
         </div>
-        <nav>
+        <nav class="navigation">
             <ul>
                 <li>
                     <a href="#buy_ticket">Заказать билет</a>
@@ -64,7 +60,7 @@
         </h2>
 
         <div>
-            <img src="images/b2_icon_1.jpg" alt="У нас большие экраны, включая формат аймакс" height="50px">
+            <img src="images/b2_icon_1.jpg" alt="У нас большие экраны, включая формат аймакс">
             <h3>
                 Большие экраны
             </h3>
@@ -73,14 +69,14 @@
                 vero voluptates.</p>
         </div>
         <div>
-            <img src="images/b2_icon_2.jpg" alt="У нас объемный звук" height="50px">
+            <img src="images/b2_icon_2.jpg" alt="У нас объемный звук">
             <h3>
                 Объемный звук
             </h3>
             <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div>
-            <img src="images/b2_icon_3.jpg" alt="У нас удобные кресла" height="50px">
+            <img src="images/b2_icon_3.jpg" alt="У нас удобные кресла">
             <h3>
                 Удобные кресла
             </h3>
@@ -95,88 +91,101 @@
             <h2 id="movies" class="movie-list__header">
                 Выберите фильм
             </h2>
+            <div class="container">
+                <table class="movie-list__table">
+                    <thead>
+                        <tr>
+                            <th class="movie-list__th1">
+                                Time
+                            </th>
+                            <th class="movie-list__th2">
+                                Stuff that will happen
+                            </th>
+                            <th>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="movie-list__tbody">
+                        <tr class="movie-list__tr_color_m">
+                            <td class="movie-list__first-column">
+                                10am - 12 pm
+                            </td>
+                            <td>
+                                Introduction and presentations about Envato
+                            </td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="33px" height="33px">
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                        d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z" />
+                                </svg>
+                            </td>
+                        </tr>
 
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>
-                            Time
-                        </th>
-                        <th>
-                            Stuff that will happen
-                        </th>
-                        <th>
+                        <tr class="movie-list__tr_color_n">
+                            <td class="movie-list__first-column">
+                                12pm - 02pm
+                            </td>
+                            <td>
+                                Sessions by honorable guests and Speakers
+                            </td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="33px" height="33px">
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                        d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z" />
+                                </svg>
+                            </td>
+                        </tr>
 
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            10am - 12 pm
-                        </td>
-                        <td>
-                            Introduction and presentations about Envato
-                        </td>
-                        <td>
+                        <tr class="movie-list__tr_color_m">
+                            <td class="movie-list__first-column">
+                                02pm - 03pm
+                            </td>
+                            <td>
+                                Break and Mingle time with the authors
+                            </td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="33px" height="33px">
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                        d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z" />
+                                </svg>
+                            </td>
+                        </tr>
 
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            12pm - 02pm
-                        </td>
-                        <td>
-                            Sessions by honorable guests and Speakers
-                        </td>
-                        <td>
-
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            02pm - 03pm
-                        </td>
-                        <td>
-                            Break and Mingle time with the authors
-                        </td>
-                        <td>
-
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            03pm - 05pm
-                        </td>
-                        <td>
-                            Portfolio Review, Rewards and Ending Presentation
-                        </td>
-                        <td>
-
-                        </td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam
-                            rem
-                            repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia
-                            nisi
-                            pariatur quaerat quam, qui quibusdam sunt!
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
+                        <tr class="movie-list__tr_color_n">
+                            <td class="movie-list__first-column">
+                                03pm - 05pm
+                            </td>
+                            <td>
+                                Portfolio Review, Rewards and Ending Presentation
+                            </td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="33px" height="33px">
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                        d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z" />
+                                </svg>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam
+            rem
+            repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia
+            nisi
+            pariatur quaerat quam, qui quibusdam sunt!
+        </div>
+
     </section>
 
     <section>
-        <div style="margin-top: 20px">
-            <img src="images/b4_img.jpg" alt="Подарок каждому зрителю" height="80px">
+        <div>
+            <img src="images/b4_img.jpg" alt="Подарок каждому зрителю">
         </div>
         <div>
             <h2>
@@ -228,11 +237,11 @@
         Map-1920x450
     </section>
 
-    <footer id="contacts" style="margin: 10px 10px 10px 0">
+    <footer id="contacts">
         Соцсети
     </footer>
 
-    <form style="width: 100px" action="/order.php" method="GET">
+    <form class="user-form" action="/order.php" method="GET">
         <input type="" value="" name="client_name" placeholder="Имя*" required />
         <input type="email" placeholder="email" name="email" required>
         <select name="place" required>
