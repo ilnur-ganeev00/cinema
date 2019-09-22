@@ -71,21 +71,14 @@ th {
     font-weight: 700;
     color: #fff;
     background: #a3cc40;
-}
-
-.movie-list__th1 {
-    padding: 20px 0 20px 40px;
-}
-
-.movie-list__th2 {
-    padding: 20px 285px 20px 0;
+    padding: 19px 0;
 }
 
 .movie-list__tbody td {
     font-size: 22px;
     font-weight: 400;
     color: #fff;
-    padding: 19px 0;
+    padding: 19px 0 17px 0;
 }
 
 .movie-list__tr_color_m {
