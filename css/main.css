@@ -20,18 +20,6 @@ span {
     font-family: 'Roboto', sans-serif;
 }
 
-.navigation {
-    text-transform: uppercase;
-}
-
-.logo {
-    background: blue;
-}
-
-.user-form {
-    width: 100px;
-}
-
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Regular.ttf') format('truetype');
@@ -44,6 +32,20 @@ span {
     font-weight: 700;
 }
 
+.navigation {
+    text-transform: uppercase;
+}
+
+.logo {
+    background: blue;
+}
+
+.user-form {
+    width: 100px;
+}
+
+/* Название таблицы */
+
 .movie-list {
     padding: 100px 0;
 }
@@ -55,6 +57,10 @@ span {
     margin: 0 0 77px 0;
     text-align: center;
 }
+
+/* \Название таблицы */
+
+/* Таблица */
 
 .container {
     max-width: 1030px;
@@ -91,32 +97,40 @@ span {
     vertical-align: top;
 }
 
-.movie-list__tr_color_m {
-    background: #373737;
-}
-
-.movie-list__tr_color_n {
-    background: #4b4d4f;
-}
-
-/* Выравнивание колонок */
-
-.movie-list__colgroup-first {
+.movie-list__first-col {
     width: 230px;
     text-align: center;
 }
 
-.movie-list__table th:nth-child(2),
-.movie-list__table td:nth-child(2) {
-    /* padding-left: 66px; */
+.movie-list__second-col {
+    width: 310px;
 }
 
-.movie-list__colgroup-fourth {
+.movie-list__third-col {
+    width: 360px;
+}
+
+.movie-list__fourth-col {
     width: 130px;
     text-align: center;
 }
 
-/* \Выравнивание колонок */
+/* .movie-list__table th:nth-child(2),
+.movie-list__table td:nth-child(2) {
+    padding-left: 66px;
+} */
+
+.movie-list__tbody tr {
+    background: #4b4d4f;
+}
+
+.movie-list .movie-list__tline_light {
+    background: #373737;
+}
+
+.movie-list__tbody tr:nth-child(4n+3) {
+    background: #6c6c6c;
+}
 
 #triangle-up {
     width: 0;
@@ -137,3 +151,5 @@ span {
     vertical-align: middle;
     display: inline-block;
 }
+
+/* \Таблица */
