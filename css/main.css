@@ -72,6 +72,7 @@ th {
     color: #fff;
     background: #a3cc40;
     padding: 19px 0;
+    text-align: center;
 }
 
 .movie-list__tbody td {
@@ -79,6 +80,8 @@ th {
     font-weight: 400;
     color: #fff;
     padding: 19px 0 17px 0;
+    text-align: center;
+    vertical-align: top;
 }
 
 .movie-list__tr_color_m {
@@ -88,3 +91,19 @@ th {
 .movie-list__tr_color_n {
     background: #4b4d4f;
 }
+
+.movie-list__colgroup-first {
+    width: 230px;
+}
+
+.movie-list__colgroup-fourth {
+    width: 130px;
+}
+
+#triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid white;
+  }
