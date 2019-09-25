@@ -17,16 +17,16 @@
         <nav class="navigation">
             <ul>
                 <li>
-                    <a href="#buy_ticket">Заказать билет</a>
+                    <a aria-label="Наш сайт специально создан для удобного заказа билетов в кино" href="#buy_ticket">Заказать билет</a>
                 </li>
                 <li>
-                    <a href="#advantages">Преимущества</a>
+                    <a aria-label="Основные преимущества нашего кинотеатра" href="#advantages">Преимущества</a>
                 </li>
                 <li>
-                    <a href="#movies">Фильмы</a>
+                    <a aria-label="Список фильмов, которые можно посмотреть" href="#movies">Фильмы</a>
                 </li>
                 <li>
-                    <a href="#contacts">Контакты</a>
+                    <a aria-label="Список наших контактов в социальных сетях" href="#contacts">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -276,20 +276,20 @@
         Соцсети
     </footer>
 
-    <form class="user-form" action="/order.php" method="GET">
+    <form id="for-button" class="user-form" action="/order.php" method="GET" enctype="multipart/form-data">
         <input type="" value="" name="client_name" placeholder="Имя*" required />
         <input type="email" placeholder="email" name="email" required>
         <select name="place" required>
-            <option>Выбор1</option>
-            <option>Выбор2</option>
-            <option>Выбор3</option>
-            <option>Выбор4</option>
-            <option>Выбор5</option>
-            <option>Выбор6</option>
-            <option>Выбор7</option>
-            <option>Выбор8</option>
-            <option>Выбор9</option>
-            <option>Выбор10</option>
+            <option value="place 1">Выбор1</option>
+            <option value="place 2">Выбор2</option>
+            <option value="place 3">Выбор3</option>
+            <option value="place 4">Выбор4</option>
+            <option value="place 5">Выбор5</option>
+            <option value="place 6">Выбор6</option>
+            <option value="place 7">Выбор7</option>
+            <option value="place 8">Выбор8</option>
+            <option value="place 9">Выбор9</option>
+            <option value="place 10">Выбор10</option>
         </select>
 
         <input id="first" type="radio" value="1" name="some" />
@@ -302,10 +302,19 @@
         <input id="agree" type="checkbox" name="client_agreed" value="yes" required />
         <label for="agree">Я согласен на обработку персональных данных</label>
 
-        <button>Заказать</button>
+        <button type="submit">Заказать</button>
 
         <input type="file" name="file" />
+
+        <!--Временная кнопка для релиза 2.3-->
+        <input type="submit" value="Заказать">
+
     </form>
+
+    <!-- Временные кнопки для релиза 2.3-->
+    <button form="for-button" type="submit">Заказать</button>
+    <input form="for-button" type="submit" value="Заказать">
+
 
 </body>
 

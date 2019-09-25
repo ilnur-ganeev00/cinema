@@ -92,8 +92,8 @@ span {
 .movie-list__tbody td {
     font-size: 22px;
     font-weight: 400;
-    padding-top: 24px;
-    padding-bottom: 12px;
+    padding-top: 25px;
+    padding-bottom: 11px;
     vertical-align: top;
 }
 
@@ -120,11 +120,11 @@ span {
     padding-left: 66px;
 } */
 
-.movie-list__tbody tr {
+.movie-list__tbody {
     background: #4b4d4f;
 }
 
-.movie-list .movie-list__tline_light {
+.movie-list__tline_light {
     background: #373737;
 }
 
