@@ -543,11 +543,72 @@ textarea {
 
 
 
-/** Общие стилил */
+/** Общие стили */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto';
+    color: #242424;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 100;
+    font-style: normal;
+    /* color: #fff; */
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 35.03px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+p + p {
+    margin-top: 19px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/** _Общие стили */
+
+/** Заголовки */
+
+.subtitle2-1 {
+    font-weight: normal;
+    /* color: #fff; */
+}
+
+.subtitle2-2 {
+    font-size: 40px;
+}
+
+.subtitle2-3 {
+    font-weight: 900;
+    /* color: #fff; */
+}
 
 
-
-/** _Общие стилил */
+/** _Заголовки */
 
 
 /** Сетка макета */
@@ -579,7 +640,6 @@ textarea {
 
 .movie-list__header {
     font-size: 50px;
-    color: #252525;
     font-weight: 700;
     margin: 0 0 77px 0;
     text-align: center;
