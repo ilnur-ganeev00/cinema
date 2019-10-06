@@ -669,7 +669,7 @@ h1 {
     font-size: 80px;
     font-weight: 100;
     font-style: normal;
-    /* color: #fff; */
+    color: #fff;
 }
 
 h2 {
@@ -813,9 +813,9 @@ button:hover {
 
 /** Заголовки */
 
-.subtitle2-1 {
+.topic__subtitle2-1 {
     font-weight: normal;
-    /* color: #fff; */
+    color: #fff;
 }
 
 .subtitle2-2 {
@@ -835,18 +835,79 @@ button:hover {
 
 /** Компоненты */
 
+.block-top {
+    background-image: url(../images/background.jpg);
+    padding-top: 51px;
+    padding-bottom: 364px;
+}
+
+.content {
+    width: 1030px;
+    margin: auto;
+}
+
+
+.navigation__ref {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.navigation__ref:hover {
+    color: #90d23d;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.navigation {
+    display: inline-block;
+    margin-left: 256px;
+    padding-top: 19px;
+}
+
+.navigation__item {
+    display: inline-block;
+}
+
+.topic {
+    text-align: center;
+}
+
+.logo-and-nav {
+    margin-bottom: 163px;
+}
+
+.topic__subtitle1-1 {
+    margin-bottom: 12px;
+}
+
+.navigation__item_2 {
+    margin-left: 35px;
+}
+
+.navigation__item_3 {
+    margin-left: 42px;
+}
+
+.navigation__item_4 {
+    margin-left: 42px;
+}
+
+.navigation__item_5 {
+    margin-left: 35px;
+}
+
+
+/** _Компоненты */
+
+
 /** Медиа правила */
 
 
 
-
-.navigation {
-    text-transform: uppercase;
-}
-
-.logo {
-    background: blue;
-}
 
 /* Название таблицы */
 

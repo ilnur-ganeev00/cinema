@@ -8,41 +8,65 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="https://university.innopolis.ru" target="_blank">
-                <img src="images/logo.png" alt="Логотип Университета Иннополис">
-            </a>
-        </div>
-        <nav class="navigation">
-            <ul>
-                <li>
-                    <a aria-label="Наш сайт специально создан для удобного заказа билетов в кино" href="#buy_ticket">Заказать билет</a>
-                </li>
-                <li>
-                    <a aria-label="Основные преимущества нашего кинотеатра" href="#advantages">Преимущества</a>
-                </li>
-                <li>
-                    <a aria-label="Список фильмов, которые можно посмотреть" href="#movies">Фильмы</a>
-                </li>
-                <li>
-                    <a aria-label="Список наших контактов в социальных сетях" href="#contacts">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <div>
-            Ваш город: <a href="#">Москва</a>
+    <header class="block-top">
+        <div class="content">
+            <div class="logo-and-nav">
+                <div class="logo">
+                    <a class="logo__ref" href="https://university.innopolis.ru" target="_blank">
+                        <img class="logo__image" src="images/logo.png" alt="Логотип Университета Иннополис">
+                    </a>
+                </div>
+
+
+                <!-- <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a class="navigation__ref" aria-label="Наш сайт специально создан для удобного заказа билетов в кино" href="#buy_ticket">Заказать билет</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__ref" aria-label="Основные преимущества нашего кинотеатра" href="#advantages">Преимущества</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__ref" aria-label="Список фильмов, которые можно посмотреть" href="#movies">Фильмы</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__ref" aria-label="Список наших контактов в социальных сетях" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav> -->
+
+
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item navigation__item_1">
+                            <a class="navigation__ref" aria-label="Наш сайт специально создан для удобного заказа билетов в кино" href="#buy_ticket">Event details</a>
+                        </li>
+                        <li class="navigation__item navigation__item_2">
+                            <a class="navigation__ref" aria-label="Основные преимущества нашего кинотеатра" href="#advantages">Speakers</a>
+                        </li>
+                        <li class="navigation__item navigation__item_3">
+                            <a class="navigation__ref" aria-label="Список фильмов, которые можно посмотреть" href="#movies">Sponsors</a>
+                        </li>
+                        <li class="navigation__item navigation__item_4">
+                            <a class="navigation__ref" aria-label="Список наших контактов в социальных сетях" href="#contacts">Past events</a>
+                        </li>
+                        <li class="navigation__item navigation__item_5">
+                            <a class="navigation__ref" aria-label="Список наших контактов в социальных сетях" href="#contacts">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="topic">
+                <h1 class="topic__subtitle1-1" id="buy_ticket">
+                    Закажите билет в кино
+                </h1>
+                <h2 class="topic__subtitle2-1">
+                    Всем покупателям подарок!
+                </h2>
+            </div>
         </div>
     </header>
 
-    <section>
-        <h1 id="buy_ticket">
-            Закажите билет в кино
-        </h1>
-        <h2 class="subtitle2-1">
-            Всем покупателям подарок!
-        </h2>
-    </section>
 
     <section>
         <h2 class="subtitle2-2">
@@ -169,7 +193,7 @@
                                 <a href="https://www.kinopoisk.ru/film/846824/" title="История игрушек 4"
                                     target="_blank">
                                     История игрушек 4
-                                </a> 
+                                </a>
                             </td>
                             <td class="movie-list__third-col">
                                 мультфильм, фэнтези, комедия
@@ -185,7 +209,7 @@
 
                         <tr>
                             <td class="movie-list__first-col">
-                                16:00                            
+                                16:00
                             </td>
                             <td class="movie-list__second-col">
                                 <a href="https://www.kinopoisk.ru/film/693730/" title="Люди в черном: Интернэшнл"
