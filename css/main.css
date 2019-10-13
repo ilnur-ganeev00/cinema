@@ -809,8 +809,7 @@ button:hover {
 .block-01 {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: 100%;
+    background-size: cover;
     padding-top: 54px;
     padding-bottom: 366px;
     margin-bottom: 84px;
@@ -835,8 +834,8 @@ button:hover {
 .block-04 {
     background-image: url(../images/ticket_background.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding-top: 147px;
+    background-size: cover;
+    padding-top: 141px;
     padding-bottom: 290px;
 }
 .block-04-container {
