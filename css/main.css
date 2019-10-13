@@ -809,37 +809,37 @@ button:hover {
 .block-01 {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
     background-size: 100%;
-    padding-top: 51px;
-    padding-bottom: 354px;
+    padding-top: 54px;
+    padding-bottom: 366px;
     margin-bottom: 84px;
 }
-.block-01__container {
+.block-01-container {
     width: 1030px;
     margin: auto;
 }
 
 .block-02 {}
-.block-02__container {
+.block-02-container {
     width: 1030px;
     margin: auto;
 }
 
 .block-03 {}
-.block-03__container {
+.block-03-container {
     width: 1030px;
     margin: auto;
 }
 
 .block-04 {}
-.block-04__container {
+.block-04-container {
     width: 1030px;
     margin: auto;
 }
 
 .block-05 {}
-.block-05__container {
+.block-05-container {
     width: 1030px;
     margin: auto;
 }
@@ -848,7 +848,7 @@ button:hover {
     height: 450px;
     background: grey;
 }
-.block-06__container {
+.block-06-container {
     width: 1030px;
     margin: auto;
     font-size: 400px;
@@ -859,7 +859,7 @@ button:hover {
     height: 220px;
     background: #90d23d;
 }
-.block-07__container {
+.block-07-container {
     width: 1030px;
     margin: auto;
     font-size: 200px;
@@ -884,12 +884,12 @@ button:hover {
 
 .logo {
     display: inline-block;
+    /* padding-top: 18px; */
 }
 
 .navigation {
     display: inline-block;
     margin-left: 256px;
-    padding-top: 19px;
 }
 
 .navigation__item {
@@ -934,7 +934,7 @@ button:hover {
 /** Таблица */
 
 .movie-list {
-    padding: 100px 0;
+    padding: 0;
 }
 
 .movie-list__header {
