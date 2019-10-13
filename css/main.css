@@ -798,7 +798,7 @@ button:hover {
 
 .subtitle2-3 {
     font-weight: 900;
-    /* color: #fff; */
+    color: #fff;
 }
 
 /** _Заголовки */
@@ -832,10 +832,18 @@ button:hover {
     margin: auto;
 }
 
-.block-04 {}
+.block-04 {
+    background-image: url(../images/ticket_background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 147px;
+    padding-bottom: 290px;
+}
 .block-04-container {
     width: 1030px;
     margin: auto;
+    text-align: right;
+    padding-left: 362px;
 }
 
 .block-05 {}
@@ -924,6 +932,14 @@ button:hover {
     margin-left: 35px;
 }
 
+.block-04-gift-image,
+.block-02-welcome {
+    display: none;
+}
+
+.block-04__info {
+    color: #fff;
+}
 
 /** _Компоненты */
 
