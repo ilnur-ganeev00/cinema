@@ -684,7 +684,7 @@ select {
     -webkit-appearance: none;
     appearance: none;
     /* Вопрос: где брать рисунок, на макете его нет */
-    background: url(../img/down-arrow.svg) 96% center / 5% no-repeat #fff;
+    /* background: url(../img/down-arrow.svg) 96% center / 5% no-repeat #fff; */
 }
 
 input[type="radio"],

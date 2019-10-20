@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <title>Cinema</title>
     <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -81,7 +84,8 @@
                                 <h3>
                                     Большие экраны
                                 </h3>
-                                <p class="block-02__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius
+                                <p class="block-02__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+                                    autem cum dolores dolorum eius
                                     error
                                     expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora
                                     temporibus
@@ -101,7 +105,8 @@
                             <h3>
                                 Удобные кресла
                             </h3>
-                            <p class="block-02__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum
+                            <p class="block-02__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+                                autem cum dolores dolorum
                                 eius
                                 error
                                 expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora
@@ -290,7 +295,7 @@
                 </p>
             </div>
             <div class="block-05__flex-container">
-                <div class="block-05__flex">
+                <div class="block-05__flex owl-carousel">
                     <div class="block-05__item">
                         <div class="block-05__inner1">
                             <div class="block-05__poster">
@@ -1406,8 +1411,26 @@
 
     </form>
 
-    <!-- <script src="js/films.js"></script>
-    <script src="js/jquery-3.4.1.js"></script> -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
 
 </body>
 
