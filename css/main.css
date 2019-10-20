@@ -845,11 +845,22 @@ button:hover {
     padding-left: 362px;
 }
 
+.block-04-gift-image,
+.block-02-welcome {
+    display: none;
+}
+
+.block-04__info {
+    color: #fff;
+}
+
+
 .block-05 {}
 .block-05-container {
     width: 1030px;
     margin: auto;
 }
+
 
 .block-06 {
     height: 450px;
@@ -874,6 +885,114 @@ button:hover {
 }
 
 /** _Сетка макета */
+
+/** Блок Преимущества */
+
+.block-02__flex-container {
+    width: 1030px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.block-02__flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -18px;
+}
+
+.block-02__item {
+    width: 296px;
+    padding: 15px;
+}
+
+.block-02__text2{
+    font-size: 14px;
+    flex: 1;
+}
+
+/** _Блок Преимущества */
+
+
+/** Мозаика фильмов на флексах */
+
+.block-05__flex-container {
+    width: 1030px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.block-05__flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -18px;
+}
+
+.block-05__item {
+    padding: 18px;
+}
+
+.block-05__inner1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.block-05__description {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    bottom: -100%;
+    background: rgba(144, 210, 61, .8);
+    border-radius: 12px;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+}
+
+.block-05__item:hover .block-05__description{
+    bottom: 0;
+}
+
+.block-05__text1 {
+    font-size: 35px;
+    font-weight: 900;
+    color: #fff;
+    margin: 0 0 10px;
+}
+
+.block-05__text2{
+    font-size: 18px;
+    color: #fff;
+    flex: 1;
+}
+
+.block-05__links{
+    display: flex;
+}
+
+.block-05__link1 + .block-05__link1{
+    margin-left: 6px;
+}
+
+.block-05__hr {
+    width: 83px;
+    height: 6px;
+    border: 0;
+    box-shadow: none;
+    margin: 0 0 15px;
+    background: #fff;
+}
+
+.block-05__svg{
+    fill: #fff;
+    transition: .2s;
+}
+.block-05__svg:hover{
+    fill: green;
+}
+
+/** _Мозаика фильмов на флексах */
 
 
 /** Компоненты */
@@ -931,14 +1050,6 @@ button:hover {
     margin-left: 35px;
 }
 
-.block-04-gift-image,
-.block-02-welcome {
-    display: none;
-}
-
-.block-04__info {
-    color: #fff;
-}
 
 /** _Компоненты */
 
