@@ -290,7 +290,7 @@
                                 <img src="images/Spider-man.jpg" alt="Человек-паук" title="Человек-паук">
                             </div>
                             <div class="block-05__description">
-                                <p id="nameFilmCarousel_1" class="block-05__text1"></p>
+                                <p class="block-05__text1">Человек-паук: Вдали от дома</p>
                                 <hr class="block-05__hr" />
                                 <p class="block-05__text2">Lorem ipsum dolor sit amet, consectetur</p>
                                 <div class="block-05__links">
@@ -408,7 +408,7 @@
                                 <img src="images/Dog.jpg" alt="Собачья жизнь 2" title="Собачья жизнь 2">
                             </div>
                             <div class="block-05__description">
-                                <p id="nameFilmCarousel_2" class="block-05__text1"></p>
+                                <p class="block-05__text1">Собачья жизнь 2</p>
                                 <hr class="block-05__hr" />
                                 <p class="block-05__text2">Lorem ipsum dolor sit amet, consectetur</p>
                                 <div class="block-05__links">
@@ -527,7 +527,7 @@
                                     title="Люди в черном: Интернэшнл">
                             </div>
                             <div class="block-05__description">
-                                <p id="nameFilmCarousel_4" class="block-05__text1"></p>
+                                <p class="block-05__text1">Люди в черном: Интернэшнл</p>
                                 <hr class="block-05__hr" />
                                 <p class="block-05__text2">Lorem ipsum dolor sit amet, consectetur</p>
                                 <div class="block-05__links">
@@ -1367,7 +1367,7 @@
     </footer>
 
     <form id="for-button" class="user-form" action="/order.php" method="GET" enctype="multipart/form-data">
-        <input type="" value="" name="client_name" placeholder="Имя*" required />
+        <input id="nameGuest" type="" value="" name="client_name" placeholder="Имя*" required />
         <input type="email" placeholder="email" name="email" required>
         <select name="place" required>
             <option value="place 1">Выбор1</option>
@@ -1392,7 +1392,7 @@
         <input id="agree" type="checkbox" name="client_agreed" value="yes" required />
         <label for="agree">Я согласен на обработку персональных данных</label>
 
-        <button type="submit">Заказать</button>
+        <button id="sendPresentInfo" type="submit">Заказать</button>
 
         <input id="upload-some" type="file" name="file" />
         <label for="upload-some">Прикрепить файл</label>
@@ -1400,6 +1400,7 @@
     </form>
 
     <script src="js/films.js"></script>
+    <script src="js/getPresent.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script>
