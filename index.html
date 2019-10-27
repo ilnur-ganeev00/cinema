@@ -153,17 +153,14 @@
                         </thead>
                         <tbody class="movie-list__tbody">
                             <tr class="movie-list__tline_light">
-                                <td class="movie-list__first-col">
-                                    10:00
+                                <td id="startFilm_1" class="movie-list__first-col">
                                 </td>
                                 <td class="movie-list__second-col">
-                                    <a href="https://www.kinopoisk.ru/film/1008445/" title="Человек-паук: Вдали от дома"
+                                    <a id="nameFilm_1" href="https://www.kinopoisk.ru/film/1008445/" title="Человек-паук: Вдали от дома"
                                         target="_blank">
-                                        Человек-паук: Вдали от дома
                                     </a>
                                 </td>
-                                <td class="movie-list__third-col">
-                                    фантастика, боевик, приключения
+                                <td id="genreFilm_1" class="movie-list__third-col">
                                 </td>
                                 <td class="movie-list__fourth-col">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -175,17 +172,14 @@
                             </tr>
 
                             <tr>
-                                <td class="movie-list__first-col">
-                                    12:00
+                                <td id="startFilm_2" class="movie-list__first-col">
                                 </td>
                                 <td class="movie-list__second-col">
-                                    <a href="https://www.kinopoisk.ru/film/1122114/" title="Собачья жизнь 2"
+                                    <a id="nameFilm_2" href="https://www.kinopoisk.ru/film/1122114/" title="Собачья жизнь 2"
                                         target="_blank">
-                                        Собачья жизнь 2
                                     </a>
                                 </td>
-                                <td class="movie-list__third-col">
-                                    фэнтези, драма, комедия
+                                <td id="genreFilm_2" class="movie-list__third-col">
                                 </td>
                                 <td class="movie-list__fourth-col">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -197,17 +191,14 @@
                             </tr>
 
                             <tr class="movie-list__tline_light">
-                                <td class="movie-list__first-col">
-                                    14:00
+                                <td id="startFilm_3" class="movie-list__first-col">
                                 </td>
                                 <td class="movie-list__second-col">
-                                    <a href="https://www.kinopoisk.ru/film/846824/" title="История игрушек 4"
+                                    <a id="nameFilm_3" href="https://www.kinopoisk.ru/film/846824/" title="История игрушек 4"
                                         target="_blank">
-                                        История игрушек 4
                                     </a>
                                 </td>
-                                <td class="movie-list__third-col">
-                                    мультфильм, фэнтези, комедия
+                                <td id="genreFilm_3" class="movie-list__third-col">
                                 </td>
                                 <td class="movie-list__fourth-col">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -219,17 +210,14 @@
                             </tr>
 
                             <tr>
-                                <td class="movie-list__first-col">
-                                    16:00
+                                <td id="startFilm_4" class="movie-list__first-col">
                                 </td>
                                 <td class="movie-list__second-col">
-                                    <a href="https://www.kinopoisk.ru/film/693730/" title="Люди в черном: Интернэшнл"
+                                    <a id="nameFilm_4" href="https://www.kinopoisk.ru/film/693730/" title="Люди в черном: Интернэшнл"
                                         target="_blank">
-                                        Люди в черном: Интернэшнл
                                     </a>
                                 </td>
-                                <td class="movie-list__third-col">
-                                    фантастика, боевик, комедия
+                                <td id="genreFilm_4" class="movie-list__third-col">
                                 </td>
                                 <td class="movie-list__fourth-col">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -302,7 +290,7 @@
                                 <img src="images/Spider-man.jpg" alt="Человек-паук" title="Человек-паук">
                             </div>
                             <div class="block-05__description">
-                                <p class="block-05__text1">Человек-паук</p>
+                                <p id="nameFilmCarousel_1" class="block-05__text1"></p>
                                 <hr class="block-05__hr" />
                                 <p class="block-05__text2">Lorem ipsum dolor sit amet, consectetur</p>
                                 <div class="block-05__links">
@@ -420,7 +408,7 @@
                                 <img src="images/Dog.jpg" alt="Собачья жизнь 2" title="Собачья жизнь 2">
                             </div>
                             <div class="block-05__description">
-                                <p class="block-05__text1">Собачья жизнь 2</p>
+                                <p id="nameFilmCarousel_2" class="block-05__text1"></p>
                                 <hr class="block-05__hr" />
                                 <p class="block-05__text2">Lorem ipsum dolor sit amet, consectetur</p>
                                 <div class="block-05__links">
@@ -539,7 +527,7 @@
                                     title="Люди в черном: Интернэшнл">
                             </div>
                             <div class="block-05__description">
-                                <p class="block-05__text1">Люди в черном: Интернэшнл</p>
+                                <p id="nameFilmCarousel_4" class="block-05__text1"></p>
                                 <hr class="block-05__hr" />
                                 <p class="block-05__text2">Lorem ipsum dolor sit amet, consectetur</p>
                                 <div class="block-05__links">
@@ -1411,6 +1399,7 @@
 
     </form>
 
+    <script src="js/films.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script>
