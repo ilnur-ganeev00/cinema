@@ -98,7 +98,7 @@ let filmsNew = [],
 //сортируем на новинки и в прокате
 for (let i = 0; i < mock.length; i++) {
     let currentFilm = mock[i];
-    
+
     if (currentFilm.filmHire) {
         filmsHire.push(currentFilm);
     }
@@ -151,98 +151,125 @@ const film = {
         return strGanars;
     },
 
+    renderFilmRow() {
 
-}
+        //добавлена строка вывода цены
+        let filmName = this.name,
+            filmStart = this.start,
+            filmGanars = film.getGanre.apply(this),
+            filmPrice = this.price;            
 
+            
+            filmHTML = `
+            <td>
+                <input type="checkbox" class="block03__checkbox" id="block03__checkbox1">
+                <label for="block03__checkbox1">
+                  <i class="icon icon-check" title="check"></i>
+                </label>
+            </td>
+            <td id="start_film_${1}">${filmStart}</td>
+            <td id="name_film_${1}">${filmName}</td>
+            <td id="ganar_film_${1}">${filmGanars}</td>
+          `;
+        return filmHTML;
+    },
+
+    renderFilmBlock() {
+        let filmName = this.name,
+            filmImage = this.image,
+            filmDescription = this.description,
+            filmFb = this.fb,
+            filmTw = this.twitter,
+            filmBh = this.behance,
+            filmHTML = `
+            <div class="block05__movie1">
+                    <div class="block05__bg">
+                        <img src="${filmImage}" alt="">
+                    </div>
+                    <div class="block05__descr">
+                        <div class="block05__text2">${filmName}</div>
+                        <div class="block05__sep"></div>
+                        <div class="block05__text3">${filmDescription}</div>
+                        <div class="block05__linls">
+                            <a href="${filmTw}" target="_blank"><i class="icon icon-twitter" title="twitter"></i></a>
+                            <a href="${filmFb}" target="_blank"><i class="icon icon-facebook" title="facebook"></i></a>
+                            <a href="${filmBh}"><i class="icon icon-camera" title="camera"></i></a>
+                        </div>
+                    </div>
+                </div>
+          `;
+        return filmHTML;
+    },
+
+    //добавлен
+    getPrice: function () {
+        return this.price
+    }
+};
+
+//получаем DOM элемент с таблицей
+let tableDOM = document.getElementById("filmsHire");
 for (let i = 0; i < filmsHire.length; i++) {
-
     let currentFilm = filmsHire[i],
         filmName = film.getName.bind(currentFilm)(),
         filmStart = film.getStart.bind(currentFilm)(),
-        filmGanars = film.getGanre.bind(currentFilm)();
+        filmGanars = film.getGanre.bind(currentFilm)(),
+        filmRowHTML = film.renderFilmRow.bind(currentFilm)(),
+        tr = document.createElement("tr"); //содаем DOM элемент TR;
 
-    console.log('Массив №', i);
-    console.log(filmName);
-    console.log(filmStart);
-    console.log(filmGanars);
+    tr.innerHTML = filmRowHTML; //записываем в DOM элемент HTML разметку
 
-    let tableDOM = document.getElementById("filmsHire");
+    //вешаем обработчик события на строку, вызывающий модальное окно
+    /*** РАЗОБРАТЬ */
+    tr.onclick = function () {
+        // 1. Находим элемент с формой заказ
+        // 2. Изменить состояние из display: none -> display: block;
+        // 3. Отобразить данные по бронированию фильма
+    
+        orderForm.style.display = 'block';
+    
+        let orderFilmName = document.getElementById('orderFilmName'),
+            orderFilmStart = document.getElementById('orderFilmStart'),
+            orderFilmGanar = document.getElementById('orderFilmGanar'),
+            orderFilmPrice = document.getElementById('orderFilmPrice');
+    
+        orderFilmName.innerHTML = filmName;
+        orderFilmStart.innerHTML = filmStart;
+        orderFilmGanar.innerHTML = filmGanars;
+        orderFilmPrice.innerHTML = filmPrice;
+    
+        let orderFilmCountTicket = document.getElementById('orderFilmCountTicket'),
+            orderFilmTotalPrice = document.getElementById('orderFilmTotalPrice');
+    
+        orderFilmTotalPrice.innerHTML = filmPrice * orderFilmCountTicket.value;
+    
+        orderFilmCountTicket.onchange = function () {
+          orderFilmTotalPrice.innerHTML = filmPrice * orderFilmCountTicket.value;
+        }
+    }
 
-
-    let filmHTML = `
-    <td id="startFilm_${i}" class="movie-list__first-col">${filmStart}
-    </td>
-    <td id="nameFilm_${i}" class="movie-list__second-col">
-        ${filmName}
-    </td>
-    <td id="genreFilm_${i}" class="movie-list__third-col">${filmGanars}
-    </td>
-    <td class="movie-list__fourth-col">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="33px" height="33px">
-            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
-                d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z" />
-        </svg>
-    </td>
-`;
- 
-    let tr = document.createElement("tr");
-    tr.innerHTML = filmHTML;
     tableDOM.appendChild(tr); //добавляем в DOM элемент таблицы DOM элемент строки с фильмом
-
 }
 
+// Закрытие модального окна
+/*** РАЗОБРАТЬ Event Handler */
+let orderForm = document.getElementById('orderForm');
+let closeOrderForm = document.getElementById('closeOrderFrom');
 
+closeOrderForm.onclick = function () {
+  orderForm.style.display = 'none';
+}
 
+// Валидация ввода имени
+/** РАЗОБРАТЬ Event Handler */
+let sendOrder = document.getElementById('sendOrder');
+sendOrder.onclick = function () {
+  let orderClinetName = document.getElementById('orderClinetName');
 
+  if (orderClinetName.value) {
+    orderClinetName.style.border = '1px solid #bebebe';
+  } else {
+    orderClinetName.style.border = '2px solid red';
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//////////////// Первоначальный вариант по теме массивы 
-
-// let genres = ['фантастика', 'боевик', 'приключения', 'фэнтези', 'драма', 'комедия', 'мультфильм'];
-
-// let films = [
-//     ['10:00', 'Человек-паук: Вдали от дома', '1and2and3'],
-//     ['12:00', 'Собачья жизнь 2', '4and5and6'],
-//     ['14:00', 'История игрушек 4', '7and4and6'],
-//     ['16:00', 'Люди в черном: Интернэшнл', '1and2and6'],
-// ]
-
-// for (let i = 0; i < films.length; i++) {
-//     let film = films[i];
-//     let elementStartFilm = document.getElementById('startFilm_' + (i + 1));
-//     let elementNameFilm = document.getElementById('nameFilm_' + (i + 1));
-//     let elementGenreFilm = document.getElementById('genreFilm_' + (i + 1));
-
-//     for (let m = 0; m < film.length; m++) {
-//         let matches = film[2].match(/(\d+)and(\d+)and(\d+)/);
-//         let g_1 = Number(matches[1]) - 1;
-//         let g_2 = Number(matches[2]) - 1;
-//         let g_3 = Number(matches[3]) - 1;
-//         let genreFilm = genres[g_1] + ', ' + genres[g_2] + ', ' + genres[g_3];
-
-//         let genreTest = genres.join(', ');
-//         console.log(genreTest);
-
-//         elementStartFilm.innerHTML = film[0];
-//         elementNameFilm.innerHTML = film[1];
-//         elementGenreFilm.innerHTML = genreFilm;
-//     }
-// }
