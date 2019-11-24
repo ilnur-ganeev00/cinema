@@ -147,7 +147,7 @@
                                         Жанр
                                     </a>
                                 </th>
-                                <th class="movie-list__fourth-col">
+                                <th class="movie-list__fourth-col">Цена от
                                 </th>
                             </tr>
                         </thead>
@@ -1398,6 +1398,56 @@
         <label for="upload-some">Прикрепить файл</label>
 
     </form>
+
+    <div id="orderForm">
+        <div class="modal">
+            <button id="closeOrderForm">X</button>
+
+            <div class="modal__form">
+                <div>
+                    <span>Название фильма:</span>
+                    <span id="orderFilmName"></span>
+                </div>
+                <div>
+                    <span>Начало сеанса:</span>
+                    <span id="orderFilmStart"></span>
+                </div>
+                <div>
+                    <span>Жанр:</span>
+                    <span id="orderFilmGanar"></span>
+                </div>
+                <div>
+                    <span>Стоимость билета от:</span>
+                    <span id="orderFilmPrice"></span>
+                </div>
+                <div>    
+                    <span>Количество билетов:</span>
+                    <input class="film-form" value="1" min="1" type="number" id="orderFilmCountTicket" />
+                </div>
+                <div>
+                    <span>Общая стоимость билетов:</span>
+                    <span id="orderFilmTotalPrice"></span>
+                </div>
+                <div>
+                    <span>Номер телефона:</span>
+                    <input class="film-form" type="tel" id="orderFilmPhone" />
+                </div>
+                <div>
+                    <span>Имя:</span>
+                    <input class="film-form" type="text" id="orderClinetName" />
+                </div>
+
+                <div class="input-wrap">
+                    <button id="sendOrder" class="button1">Забронировать</button>
+                </div>
+            </div>
+
+            <div class="places">
+                
+            </div>
+
+        </div>
+    </div>
 
     <script src="js/films.js"></script>
     <script src="js/getPresent.js"></script>
