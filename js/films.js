@@ -92,23 +92,48 @@ const genres = [
 ];
 
 
+// Отображение мест в зале
+
+const places = [];
+
+// Задать количество мест в зале
+let seatsCount = 8;
+
+for (let y = 1; y < seatsCount + 1; y++) {
+    let bStatus = Math.round(Math.random());
+
+    let place = {
+        seatNumber: y,
+        price: 100,
+        booking: bStatus,
+    };
+    places.push(place);
+};
+
+
 
 
 // Функции обработчики
 
-let order = function () {
-    // console.log('Функция order');
+let order = function (e) {
+    // console.warn(e);
+
+    let clickedElement = e.target,
+        index = clickedElement.innerHTML*1 - 1;
+    // console.log('Индекс места:', index);
+
+    let place = places[index];
+    // console.log('Полученный объект-место:', place);
+
 
     if (place.booking) {
         alert('Место забронировано');
     } else {
         place.booking = 1;
-        console.log(place.booking);
-        // let el = EventTarget;
-        // console.log(el);
-        // seatBooked = el.seatNumber;
-        // console.log(seatBooked);
-
+        // console.log('Статус брони изменен:', place.booking);
+        let bookedSeatNumber = document.getElementById('orderSeatNumber');
+        console.log(bookedSeatNumber);
+        bookedSeatNumber.innerHTML = place.seatNumber;
     }
 };
 
@@ -142,24 +167,6 @@ let placeHoverOut = function () {
 
 
 
-// Отображение мест в зале
-
-const places = [];
-
-// Задать количество мест в зале
-let seatsCount = 8;
-
-for (let y = 1; y < seatsCount + 1; y++) {
-    let bStatus = Math.round(Math.random());
-
-    place = {
-        seatNumber: y,
-        price: 100,
-        booking: bStatus,
-    };
-    places.push(place);
-};
-// console.log(places);
 
 
 let placesHTML = document.querySelector('.places');
@@ -167,7 +174,7 @@ let placesHTML = document.querySelector('.places');
 
 // console.log(placesHTML);
 
-for (place of places) {
+for (let place of places) {
     let placeDiv = document.createElement('div');
     placeDiv.addEventListener('click', order);
     placeDiv.addEventListener('click', placeToggle);
@@ -312,14 +319,14 @@ for (let i = 0; i < filmsHire.length; i++) {
         orderFilmGanar.innerHTML = filmGanars;
         orderFilmPrice.innerHTML = filmPrice;
     
-        let orderFilmCountTicket = document.getElementById('orderFilmCountTicket'),
-            orderFilmTotalPrice = document.getElementById('orderFilmTotalPrice');
+        // let orderFilmCountTicket = document.getElementById('orderFilmCountTicket'),
+        //     orderFilmTotalPrice = document.getElementById('orderFilmTotalPrice');
     
-        orderFilmTotalPrice.innerHTML = filmPrice * orderFilmCountTicket.value;
+        // orderFilmTotalPrice.innerHTML = filmPrice * orderFilmCountTicket.value;
     
-        orderFilmCountTicket.onchange = function () {
-          orderFilmTotalPrice.innerHTML = filmPrice * orderFilmCountTicket.value;
-        }
+        // orderFilmCountTicket.onchange = function () {
+        //   orderFilmTotalPrice.innerHTML = filmPrice * orderFilmCountTicket.value;
+        // }
     }
 
     tableDOM.appendChild(tr); //добавляем в DOM элемент таблицы DOM элемент строки с фильмом
