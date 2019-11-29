@@ -97,16 +97,27 @@ const genres = [
 const places = [];
 
 // Задать количество мест в зале
-let seatsCount = 8;
+let seatsCount = 12;
 
 for (let y = 1; y < seatsCount + 1; y++) {
     let bStatus = Math.round(Math.random());
 
+    let pr;
+
+    if (y < 4) {
+        pr = 100;
+    }  else if (y > seatsCount - 3) {
+        pr = 100;
+    } else {
+        pr = 200;
+    };
+
     let place = {
         seatNumber: y,
-        price: 100,
+        price: pr,
         booking: bStatus,
     };
+
     places.push(place);
 };
 
@@ -116,52 +127,53 @@ for (let y = 1; y < seatsCount + 1; y++) {
 // Функции обработчики
 
 let order = function (e) {
-    // console.warn(e);
-
     let clickedElement = e.target,
         index = clickedElement.innerHTML*1 - 1;
-    // console.log('Индекс места:', index);
 
     let place = places[index];
-    // console.log('Полученный объект-место:', place);
-
 
     if (place.booking) {
         alert('Место забронировано');
     } else {
         place.booking = 1;
-        // console.log('Статус брони изменен:', place.booking);
         let bookedSeatNumber = document.getElementById('orderSeatNumber');
-        console.log(bookedSeatNumber);
-        bookedSeatNumber.innerHTML = place.seatNumber;
+        bookedSeatNumber.value = place.seatNumber;
+        let seatPrice = document.getElementById('orderFilmPrice');
+        orderFilmPrice.value = place.price;
     }
 };
 
-let placeToggle = function () {
-    console.log('Функция placeToggle')
+let placeToggle = function (e) {
+    let clickedElementToggle = e.target,
+        index = clickedElementToggle.innerHTML*1 - 1;
 
-    // if (place.booking) {
-    //     // placeDiv.classList.add('placeBooked');
-    // } else {
-    //     placeDiv.classList.add('placeBooked');
+    clickedElementToggle.classList.toggle('placeFree');
+    clickedElementToggle.classList.toggle('placeBooked');
 
-    //     // placeDiv.classList.add('placeFree');
-    // }
-
+    let place = places[index];
 };
 
-let placeContext = function () {
-    // console.log('Функция placeContext')
-    alert(place.price)
+let placeContext = function (e) {
+    let clickedElementContext = e.target,
+        indexContext = clickedElementContext.innerHTML*1 - 1;
+
+    let place = places[indexContext],
+        currentPrice = place.price;
+
+    alert('Цена билета: ' + currentPrice);
+    e.preventDefault();
 };
 
+let placeHover = function (e) {
+    let clickedElementHover = e.target;
 
-let placeHover = function () {
-    console.log('Функция placeHover')
-    // placeDiv.classList.add('placeHover')
+    clickedElementHover.classList.toggle('placeFree');
+    clickedElementHover.classList.toggle('placeHover');
 };
-let placeHoverOut = function () {
-    console.log('Функция placeHoverOut')
+let placeHoverOut = function (e) {
+    let clickedElementHoverOut = e.target;
+    clickedElementHoverOut.classList.toggle('placeHover');
+    clickedElementHoverOut.classList.toggle('placeFree');
 };
 
 
@@ -172,7 +184,8 @@ let placeHoverOut = function () {
 let placesHTML = document.querySelector('.places');
 // let hall = document.createElement('div');
 
-// console.log(placesHTML);
+let parent = document.querySelector('.input-wrap');
+// console.log(parent);
 
 for (let place of places) {
     let placeDiv = document.createElement('div');
@@ -193,6 +206,9 @@ for (let place of places) {
     }
 
     placesHTML.append(placeDiv);
+
+    // parent.insertAdjacentHTML('afterend', placeDiv);
+
 };
 
 
@@ -311,13 +327,13 @@ for (let i = 0; i < filmsHire.length; i++) {
 
         let orderFilmName = document.getElementById('orderFilmName'),
             orderFilmStart = document.getElementById('orderFilmStart'),
-            orderFilmGanar = document.getElementById('orderFilmGanar'),
-            orderFilmPrice = document.getElementById('orderFilmPrice');
+            orderFilmGanar = document.getElementById('orderFilmGanar');
+            // orderFilmPrice = document.getElementById('orderFilmPrice');
 
         orderFilmName.innerHTML = filmName;
         orderFilmStart.innerHTML = filmStart;
         orderFilmGanar.innerHTML = filmGanars;
-        orderFilmPrice.innerHTML = filmPrice;
+        // orderFilmPrice.innerHTML = filmPrice;
     
         // let orderFilmCountTicket = document.getElementById('orderFilmCountTicket'),
         //     orderFilmTotalPrice = document.getElementById('orderFilmTotalPrice');
