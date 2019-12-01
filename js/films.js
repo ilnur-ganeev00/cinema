@@ -1,3 +1,4 @@
+function filmsJsLoad() {
 
 /** Заглушки данных */
 const mock = [
@@ -126,22 +127,44 @@ for (let y = 1; y < seatsCount + 1; y++) {
 
 // Функции обработчики
 
-let order = function (e) {
+// let order = function (e) {
+//     let clickedElement = e.target,
+//         index = clickedElement.innerHTML*1 - 1;
+
+//     let place = places[index];
+
+//     if (place.booking) {
+//         alert('Место забронировано');
+//     } else {
+//         place.booking = 1;
+//         let bookedSeatNumber = document.getElementById('orderSeatNumber');
+//         bookedSeatNumber.value = place.seatNumber;
+//         let seatPrice = document.getElementById('orderFilmPrice');
+//         orderFilmPrice.value = place.price;
+//     }
+// };
+
+let orderBubble = function (e) {
+
     let clickedElement = e.target,
-        index = clickedElement.innerHTML*1 - 1;
+        index = clickedElement.innerHTML*1 - 1, 
+        place = places[index],
+        cName = clickedElement.classList;
 
-    let place = places[index];
-
-    if (place.booking) {
-        alert('Место забронировано');
-    } else {
-        place.booking = 1;
-        let bookedSeatNumber = document.getElementById('orderSeatNumber');
-        bookedSeatNumber.value = place.seatNumber;
-        let seatPrice = document.getElementById('orderFilmPrice');
-        orderFilmPrice.value = place.price;
+    if (cName[0] == 'placeDiv') {
+        // console.log(cName[0]);
+        if (place.booking) {
+            alert('Место забронировано');
+        } else {
+            place.booking = 1;
+            let bookedSeatNumber = document.getElementById('orderSeatNumber');
+            bookedSeatNumber.value = place.seatNumber;
+            let seatPrice = document.getElementById('orderFilmPrice');
+            orderFilmPrice.value = place.price;
+        }
     }
 };
+
 
 let placeToggle = function (e) {
     let clickedElementToggle = e.target,
@@ -177,19 +200,16 @@ let placeHoverOut = function (e) {
 };
 
 
-
-
-
-
 let placesHTML = document.querySelector('.places');
 // let hall = document.createElement('div');
+// console.log('placesHTML', placesHTML);
 
 let parent = document.querySelector('.input-wrap');
 // console.log(parent);
 
 for (let place of places) {
     let placeDiv = document.createElement('div');
-    placeDiv.addEventListener('click', order);
+    // placeDiv.addEventListener('click', order);
     placeDiv.addEventListener('click', placeToggle);
     placeDiv.addEventListener('contextmenu', placeContext);
     placeDiv.addEventListener('mouseover', placeHover);
@@ -357,6 +377,9 @@ closeOrderForm.onclick = function () {
     orderForm.style.display = 'none';
 }
 
+orderForm.addEventListener('click', orderBubble);
+
+
 // Валидация ввода имени
 /** РАЗОБРАТЬ Event Handler */
 let sendOrder = document.getElementById('sendOrder');
@@ -370,5 +393,5 @@ sendOrder.onclick = function () {
   }
 }
 
-
+}
 
