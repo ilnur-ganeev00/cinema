@@ -1015,11 +1015,23 @@ button:hover {
 
 .navigation {
     display: inline-block;
-    margin-left: 256px;
+    margin-left: 55px;
 }
 
 .navigation__item {
     display: inline-block;
+}
+
+.city-location {
+    display: inline-block;
+    margin-left: 50px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.city-location__name {
+    text-decoration: underline;
 }
 
 .topic {
@@ -1035,19 +1047,19 @@ button:hover {
 }
 
 .navigation__item_2 {
-    margin-left: 35px;
+    margin-left: 15px;
 }
 
 .navigation__item_3 {
-    margin-left: 42px;
+    margin-left: 15px;
 }
 
 .navigation__item_4 {
-    margin-left: 42px;
+    margin-left: 15px;
 }
 
 .navigation__item_5 {
-    margin-left: 35px;
+    margin-left: 15px;
 }
 
 
@@ -1229,3 +1241,44 @@ button:hover {
 }
 
 /** _Окно бронирования билетов  */
+
+
+
+
+/** Выбор города  */
+
+#choose_city {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    z-index: inherit;
+    padding-top: 20px;
+}
+
+#closeChoose_city {
+    position: absolute;
+    right: 5px;
+    font-size: 30px;
+    top: 5px;
+    cursor: pointer;
+}
+
+#choose_city .modal {
+    background-color: #F8F8FF;
+    margin: 0 auto;
+    width: 1000px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.choose_city__form {
+    width: 300px;
+    height: 20px;
+}
+
+/** _Выбор города  */

@@ -47,6 +47,11 @@
                         </li>
                     </ul>
                 </nav>
+
+                <div class="city-location">
+                    <span>Ваш город</span>
+                    <span id="city_name" class="city-location__name">Не определен</span>
+                </div>
             </div>
             <div class="topic">
                 <h1 class="topic__subtitle1-1" id="buy_ticket">
@@ -1455,6 +1460,24 @@
         </div>
     </div>
 
+    <div id="choose_city">
+            <div class="modal">
+                <button id="closeChoose_city">X</button>
+    
+                <div class="modal__form">
+                    <div>
+                        <span>Ваш город</span>
+                        <input name="choose_city__form" class="choose_city__form" type="text" placeholder="Начните набирать название" />
+                    </div>
+                    <div class="input-wrap">
+                        <button class="button1">Выбрать</button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+
     <script src="js/getPresent.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -1476,6 +1499,7 @@
             }
         })
     </script>
+    <script src="js/ajax.js"></script>
 
 </body>
 
