@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="loaded">
 
 <head>
     <meta charset="utf-8">
@@ -8,11 +8,12 @@
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/films.js"></script>
 
 </head>
 
-<body onload="filmsJsLoad()" >
+<body>
     <header class="block-01">
         <div class="block-01-container">
             <div class="logo-and-nav">
@@ -1469,8 +1470,8 @@
                         <span>Ваш город</span>
                         <input name="choose_city__form" class="choose_city__form" type="text" placeholder="Начните набирать название" />
                     </div>
-                    <div class="input-wrap">
-                        <button class="button1">Выбрать</button>
+                    <div id="search_result">
+
                     </div>
                 </div>
         
@@ -1479,7 +1480,6 @@
     
 
     <script src="js/getPresent.js"></script>
-    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
@@ -1500,7 +1500,9 @@
         })
     </script>
     <script src="js/ajax.js"></script>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", filmsJsLoad);
+    </script>
 </body>
 
 </html>

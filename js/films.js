@@ -1,3 +1,10 @@
+// отследить загрузку док-та и выполнить ф-цию 2мя способами JS и jQ
+
+// jQuery(document).ready(($) => {
+//     filmsJsLoad();
+// });
+
+
 function filmsJsLoad() {
 
 /** Заглушки данных */
@@ -146,23 +153,26 @@ for (let y = 1; y < seatsCount + 1; y++) {
 
 let orderBubble = function (e) {
 
+    let orderPromise = new Promise ((resolve, reject) => {
+    
     let clickedElement = e.target,
-        index = clickedElement.innerHTML*1 - 1, 
-        place = places[index],
-        cName = clickedElement.classList;
+    index = clickedElement.innerHTML*1 - 1, 
+    place = places[index],
+    cName = clickedElement.classList;
 
     if (cName[0] == 'placeDiv') {
-        // console.log(cName[0]);
-        if (place.booking) {
-            alert('Место забронировано');
-        } else {
-            place.booking = 1;
-            let bookedSeatNumber = document.getElementById('orderSeatNumber');
-            bookedSeatNumber.value = place.seatNumber;
-            let seatPrice = document.getElementById('orderFilmPrice');
-            orderFilmPrice.value = place.price;
-        }
-    }
+    // console.log(cName[0]);
+    if (place.booking) {
+        alert('Место забронировано');
+    } else {
+        place.booking = 1;
+        let bookedSeatNumber = document.getElementById('orderSeatNumber');
+        bookedSeatNumber.value = place.seatNumber;
+        let seatPrice = document.getElementById('orderFilmPrice');
+        orderFilmPrice.value = place.price;
+    }}
+    })
+    return orderPromise
 };
 
 
@@ -170,10 +180,19 @@ let placeToggle = function (e) {
     let clickedElementToggle = e.target,
         index = clickedElementToggle.innerHTML*1 - 1;
 
-    clickedElementToggle.classList.toggle('placeFree');
-    clickedElementToggle.classList.toggle('placeBooked');
-
     let place = places[index];
+
+    if (place.booking) {
+        
+    } else {
+        clickedElementToggle.classList.toggle('placeFree');
+        clickedElementToggle.classList.toggle('placeBooked');
+    
+    }
+
+    // clickedElementToggle.classList.toggle('placeFree');
+    // clickedElementToggle.classList.toggle('placeBooked');
+
 };
 
 let placeContext = function (e) {
@@ -377,7 +396,13 @@ closeOrderForm.onclick = function () {
     orderForm.style.display = 'none';
 }
 
-orderForm.addEventListener('click', orderBubble);
+orderForm.addEventListener('click', e => {
+    let orderPromise = orderBubble(e);
+    orderPromise
+        .then(placeToggle.bind(this, e));
+}
+
+);
 
 
 // Валидация ввода имени
@@ -393,5 +418,5 @@ sendOrder.onclick = function () {
   }
 }
 
-}
 
+}

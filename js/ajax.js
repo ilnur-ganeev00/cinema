@@ -8,6 +8,7 @@ let cities;
  * @param {*} api_url - адрес запроса
  */
 
+
 function getRequest(api_url, callback) {
     let xhr = new XMLHttpRequest(),
         async = true;
@@ -41,16 +42,26 @@ jQuery(($)=> {
 
         $('body').on('input keyup', 'input[name=choose_city__form]', function() {
             // console.log(cities);
+            counter = 0;
             let search = $(this).val(),
                 html = '<ul>';
-            for (let i = 0; i < cities.lenght; i++) {
-                if (cities[i].toLowerCase().indexOf(search.toLowerCase()) >= 0) {
-                    html += '<li>' + cities[i]['name'] + ' (' + cities[i]['area'] + ')</li>';
+            for (let i = 0; i < cities.length; i++) {
+                if (cities[i].name.toLowerCase().indexOf(search.toLowerCase()) >= 0 && counter < 5) {
+                    html += '<li data-city="' + cities[i].name+ '">' + cities[i].name + ' (' + cities[i].area + ')</li>';
+                    counter++;
                 }
             }
             html += '</ul>';
+            $('#search_result').html(html);
 
         })
+
+        $('body').on('click', '#search_result li', function() {
+            $('#city_name').html($(this).data('city'));
+            choose_city.style.display = 'none';
+
+        })
+
     });
 });
 
