@@ -4,9 +4,10 @@
 //     filmsJsLoad();
 // });
 
+// document.addEventListener("DOMContentLoaded", filmsJsLoad);
+
 
 function filmsJsLoad() {
-
 /** Заглушки данных */
 const mock = [
     {
@@ -400,6 +401,7 @@ orderForm.addEventListener('click', e => {
     let orderPromise = orderBubble(e);
     orderPromise
         .then(placeToggle.bind(this, e));
+        // .then...
 }
 
 );
@@ -420,3 +422,5 @@ sendOrder.onclick = function () {
 
 
 }
+
+document.addEventListener("DOMContentLoaded", filmsJsLoad);

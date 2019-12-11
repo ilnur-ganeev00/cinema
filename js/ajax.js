@@ -41,7 +41,7 @@ jQuery(($)=> {
         }
 
         $('body').on('input keyup', 'input[name=choose_city__form]', function() {
-            // console.log(cities);
+            console.log(cities);
             counter = 0;
             let search = $(this).val(),
                 html = '<ul>';

@@ -846,7 +846,7 @@ button:hover {
 }
 
 .block-04-gift-image,
-.block-02-welcome {
+.welcome {
     display: none;
 }
 
@@ -1033,6 +1033,11 @@ button:hover {
 .city-location__name {
     text-decoration: underline;
 }
+.city-location__name:hover{
+    color: #90d23d;
+    cursor: pointer;
+}
+
 
 .topic {
     text-align: center;
