@@ -642,6 +642,7 @@ h3 {
     font-size: 35.03px;
     font-weight: 900;
     font-style: normal;
+    text-align: center;
 }
 
 p {
@@ -792,13 +793,15 @@ button:hover {
     color: #fff;
 }
 
-.subtitle2-2 {
+.welcome__subtitle2-2 {
     font-size: 40px;
+    margin-bottom: 35px;
 }
 
-.subtitle2-3 {
+.block-04__subtitle2-3 {
     font-weight: 900;
     color: #fff;
+    margin-bottom: 61px;
 }
 
 /** _Заголовки */
@@ -811,21 +814,60 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 54px;
-    padding-bottom: 366px;
-    margin-bottom: 84px;
+    padding-bottom: 364px;
+    margin-bottom: 79px;
+    position: relative;
 }
 .block-01-container {
     width: 1030px;
     margin: auto;
 }
 
-.block-02 {}
+.block-01:after {
+    content: '';
+    position: absolute;
+    border-bottom: 0 solid #fff;
+    border-left: 0 solid transparent;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+    border-top: 13vh solid transparent;
+    border-right: 200vh solid #fff;
+
+}
+
 .block-02-container {
     width: 1030px;
     margin: auto;
+    position: relative;
+    margin-bottom: 121px;
 }
 
-.block-03 {}
+.welcome {
+   width: 516px;
+   padding: 35px 32px 42px;
+   background: #fff; 
+   box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
+   position: absolute;
+   top: -208px;
+   right: -1px;
+}
+
+.welcome__sub {
+    width: 394px;
+    line-height: 1.2;
+}
+
+.advantages-subtitle {
+    margin-bottom: 123px;
+}
+
+.block-03 {
+    margin-bottom: 151px;
+}
 .block-03-container {
     width: 1030px;
     margin: auto;
@@ -836,7 +878,9 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 141px;
-    padding-bottom: 290px;
+    padding-bottom: 173px;
+    position: relative;
+    margin-bottom: 89px;
 }
 .block-04-container {
     width: 1030px;
@@ -845,22 +889,57 @@ button:hover {
     padding-left: 362px;
 }
 
-.block-04-gift-image,
-.welcome {
-    display: none;
+.block-04-gift-image {
+    position: absolute;
+    top: -64px;
+    left: 160px;
 }
 
 .block-04__info {
     color: #fff;
 }
 
+.block-04__last {
+    margin-bottom: 28px;
+}
 
-.block-05 {}
+.block-04__get-gift {
+    background: #90d23d;
+    height: 55px;
+    width: 220px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: auto;
+    padding-top: 19px;
+}
+
+.block-04__link {
+    color: #fff;
+    font-size: 18px;
+}
+
+.block-04__link:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.block-05 {
+    margin-bottom: 79px;
+}
+
 .block-05-container {
     width: 1030px;
     margin: auto;
+    padding-left: 29px;
 }
 
+.block-05__subtitle2-5 {
+    margin-bottom: 42px;
+}
+
+.block-05-text {
+    margin-bottom: 63px;
+}
 
 .block-06 {
     height: 450px;
@@ -880,34 +959,96 @@ button:hover {
 .block-07-container {
     width: 1030px;
     margin: auto;
-    font-size: 200px;
-    text-align: center;
+    /* font-size: 200px; */
+    /* text-align: center; */
 }
 
 /** _Сетка макета */
 
 /** Блок Преимущества */
 
-.block-02__flex-container {
-    width: 1030px;
-    margin: 0 auto;
-    padding: 0 18px;
+.advantages {
+    overflow: hidden;
 }
 
-.block-02__flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -18px;
-}
-
-.block-02__item {
+.advantages-col1 {
+    float: left;
     width: 296px;
-    padding: 15px;
+}
+.advantages-col2 {
+    float: left;
+    width: 433px;
+}
+.advantages-col3 {
+    float: left;
+    width: 300px;
 }
 
-.block-02__text2{
-    font-size: 14px;
-    flex: 1;
+.advantages-image-wrap {
+    height: 211px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.advantages-image-wrap2 {
+    height: 211px;
+    position: relative;
+    margin-bottom: 44px;
+}
+
+.advantages-image-wrap3 {
+    height: 211px;
+    position: relative;
+    margin-bottom: 44px;
+}
+
+.advantages-image-wrap__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.advantages-image-wrap__img2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-left: 133px;
+}
+
+.advantages-image-wrap__img3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -30px;
+    margin: auto;
+}
+
+
+.advantages-clear {
+    clear: both;
+}
+
+.advantages-col1__subtitle3-2 {
+    margin-bottom: 22px;
+}
+
+.advantages-col2__subtitle3-2 {
+    margin-bottom: 18px;
+}
+
+.advantages-col3__subtitle3-2 {
+    margin-bottom: 18px;
+}
+
+
+.advantages__sub {
+    text-align: center;
 }
 
 /** _Блок Преимущества */
@@ -928,7 +1069,10 @@ button:hover {
 }
 
 .block-05__item {
-    padding: 18px;
+    padding-left: 0;
+    padding-right: 41px;
+    padding-top: 18px;
+    padding-bottom: 23px;
 }
 
 .block-05__inner1 {
@@ -1048,7 +1192,11 @@ button:hover {
 }
 
 .topic__subtitle1-1 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+}
+
+.navigation__item_1 {
+    margin-left: 115px;
 }
 
 .navigation__item_2 {
@@ -1078,12 +1226,13 @@ button:hover {
 
 .movie-list {
     padding: 0;
+    margin-bottom: 41px;
 }
 
 .movie-list__header {
     font-size: 50px;
     font-weight: 700;
-    margin: 0 0 77px 0;
+    margin: 0 0 82px 0;
     text-align: center;
 }
 
@@ -1104,16 +1253,16 @@ button:hover {
     font-size: 30px;
     font-weight: 700;
     background: #a3cc40;
-    padding-top: 15px;
-    padding-bottom: 18px;
+    padding-top: 22px;
+    padding-bottom: 21px;
     text-align: center;
 }
 
 .movie-list__tbody td {
     font-size: 22px;
     font-weight: 400;
-    padding-top: 25px;
-    padding-bottom: 11px;
+    padding-top: 28px;
+    padding-bottom: 25px;
     vertical-align: top;
 }
 
@@ -1175,6 +1324,10 @@ button:hover {
 #filmsHire tr:hover td{
     color: darksalmon;
     cursor: pointer;
+}
+
+.block-03__sub {
+    text-align: center;
 }
 
 /** _Таблица */
@@ -1288,3 +1441,39 @@ button:hover {
 }
 
 /** _Выбор города  */
+
+
+/** Получение подарка  */
+
+
+#getPresent {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    z-index: inherit;
+    padding-top: 20px;
+}
+
+#closeGetPresent {
+    position: absolute;
+    right: 5px;
+    font-size: 30px;
+    top: 5px;
+    cursor: pointer;
+}
+
+#getPresent .modal {
+    background-color: #F8F8FF;
+    margin: 0 auto;
+    width: 450px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 100px;
+    position: relative;
+}
+
+/** _Получение подарка  */

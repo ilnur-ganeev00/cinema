@@ -6,8 +6,8 @@
     <title>Cinema</title>
     <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/films.js"></script>
 
@@ -28,24 +28,24 @@
                         <li class="navigation__item navigation__item_1">
                             <a class="navigation__ref"
                                 aria-label="Наш сайт специально создан для удобного заказа билетов в кино"
-                                href="#buy_ticket">Event details</a>
+                                href="#buy_ticket">Заказать билет</a>
                         </li>
                         <li class="navigation__item navigation__item_2">
                             <a class="navigation__ref" aria-label="Основные преимущества нашего кинотеатра"
-                                href="#advantages">Speakers</a>
+                                href="#anchorAdvantages">Преимущества</a>
                         </li>
                         <li class="navigation__item navigation__item_3">
                             <a class="navigation__ref" aria-label="Список фильмов, которые можно посмотреть"
-                                href="#movies">Sponsors</a>
+                                href="#movies">Фильмы</a>
                         </li>
                         <li class="navigation__item navigation__item_4">
                             <a class="navigation__ref" aria-label="Список наших контактов в социальных сетях"
-                                href="#contacts">Past events</a>
+                                href="#contacts">Контакты</a>
                         </li>
-                        <li class="navigation__item navigation__item_5">
+                        <!-- <li class="navigation__item navigation__item_5">
                             <a class="navigation__ref" aria-label="Список наших контактов в социальных сетях"
                                 href="#contacts">Contact</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
 
@@ -68,62 +68,69 @@
     <section class="block-02">
         <div class="block-02-container">
             <div class="welcome">
-                <h2 class="subtitle2-2">
+                <h2 class="welcome__subtitle2-2">
                     Добро пожаловать!
                 </h2>
-                <p>Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis
+                <p class="welcome__sub">Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima
+                    optio perferendis
                     quibusdam
                     quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</p>
-                <p>Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis
+                <p class="welcome__sub">Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima
+                    optio perferendis
                     quibusdam
                     quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</p>
             </div>
 
             <section>
-                <h2 id="advantages">
+                <h2 class="advantages-subtitle" id="anchorAdvantages">
                     Почему мы?
                 </h2>
 
-                <div class="block-02__flex-container">
-                    <div class="block-02__flex">
-                        <div class="block-02__item">
-                            <img src="images/b2_icon_1.jpg" alt="У нас большие экраны, включая формат аймакс">
-                            <div>
-                                <h3>
-                                    Большие экраны
-                                </h3>
-                                <p class="block-02__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
-                                    autem cum dolores dolorum eius
-                                    error
-                                    expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora
-                                    temporibus
-                                    veritatis
-                                    vero voluptates.</p>
-                            </div>
+                <div class="advantages">
+                    <div class="advantages-col1">
+                        <div class="advantages-image-wrap">
+                            <img class="advantages-image-wrap__img" src="images/b2_icon_1.jpg"
+                                alt="У нас большие экраны, включая формат аймакс">
                         </div>
-                        <div class="block-02__item">
-                            <img src="images/b2_icon_2.jpg" alt="У нас объемный звук">
-                            <h3>
-                                Объемный звук
+                        <div>
+                            <h3 class="advantages-col1__subtitle3-2">
+                                Большие экраны
                             </h3>
-                            <p class="block-02__text2">Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="block-02__item">
-                            <img src="images/b2_icon_3.jpg" alt="У нас удобные кресла">
-                            <h3>
-                                Удобные кресла
-                            </h3>
-                            <p class="block-02__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
-                                autem cum dolores dolorum
-                                eius
-                                error
-                                expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora
-                                temporibus
-                                veritatis
-                                vero voluptates.</p>
+                            <p class="advantages__sub">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum
+                                eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione
+                                tempora temporibus veritatis vero voluptates.
+                            </p>
                         </div>
                     </div>
+                    <div class="advantages-col2">
+                        <div class="advantages-image-wrap2">
+                            <img class="advantages-image-wrap__img2" src="images/b2_icon_2.jpg"
+                                alt="У нас объемный звук">
+                        </div>
+                        <h3 class="advantages-col2__subtitle3-2">
+                            Объемный звук
+                        </h3>
+                        <p class="advantages__sub">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="advantages-col3">
+                        <div class="advantages-image-wrap3">
+                            <img class="advantages-image-wrap__img3" src="images/b2_icon_3.jpg"
+                                alt="У нас удобные кресла">
+                        </div>
+                        <h3 class="advantages-col3__subtitle3-2">
+                            Удобные кресла
+                        </h3>
+                        <p class="advantages__sub">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius
+                            error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora
+                            temporibus veritatis vero voluptates.
+                        </p>
+                    </div>
                 </div>
+                <div class="advantages-clear"></div>
             </section>
         </div>
     </section>
@@ -240,11 +247,11 @@
                 </div>
             </div>
             <div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam
-                rem
-                repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia
-                nisi
-                pariatur quaerat quam, qui quibusdam sunt!
+                <p class="block-03__sub">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem
+                    repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi
+                    pariatur quaerat quam, qui quibusdam sunt!
+                </p>
             </div>
         </div>
     </section>
@@ -252,10 +259,10 @@
     <section class="block-04">
         <div class="block-04-container">
             <div class="block-04-gift-image">
-                <img src="images/b4_img.jpg" alt="Подарок каждому зрителю">
+                <img src="images/gift.png" alt="Подарок каждому зрителю">
             </div>
             <div>
-                <h2 class="subtitle2-3">
+                <h2 class="block-04__subtitle2-3">
                     Подарок каждому!
                 </h2>
                 <p class="block-04__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
@@ -269,19 +276,22 @@
                     aspernatur, cum, cupiditate
                     excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi
                     sint, tenetur unde velit veniam!</p>
-                <p class="block-04__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
+                <p class="block-04__info block-04__last">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                    aperiam
                     aspernatur, cum, cupiditate
                     excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi
                     sint, tenetur unde velit veniam!</p>
-                <a href="#">Получить подарок</a>
+                <div class="block-04__get-gift">
+                    <span id="giftButton" class="block-04__link">Получить подарок</span>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="block-05">
         <div class="block-05-container">
-            <div>
-                <h2>
+            <div class="block-05-text">
+                <h2 class="block-05__subtitle2-5">
                     Фильмы
                 </h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius
@@ -298,7 +308,7 @@
                                 <img src="images/Spider-man.jpg" alt="Человек-паук" title="Человек-паук">
                             </div>
                             <div class="block-05__description">
-                                <p class="block-05__text1">Человек-паук: Вдали от дома</p>
+                                <p class="block-05__text1">Человек-паук</p>
                                 <hr class="block-05__hr" />
                                 <p class="block-05__text2">Lorem ipsum dolor sit amet, consectetur</p>
                                 <div class="block-05__links">
@@ -1370,41 +1380,83 @@
 
     <footer class="block-07" id="contacts">
         <div class="block-07-container">
-            Contacts
+            <div class="block-07-contacts">
+                <a class="block-07__link1" href="https://www.facebook.com" target="_blank">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px"
+                        height="48px">
+                        <defs>
+                            <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="48px"
+                                height="48px">
+                                <feOffset in="SourceAlpha" dx="0" dy="1" />
+                                <feGaussianBlur result="blurOut" stdDeviation="1" />
+                                <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+                                <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                <feComponentTransfer>
+                                    <feFuncA type="linear" slope="0.25" />
+                                </feComponentTransfer>
+                                <feMerge>
+                                    <feMergeNode />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                            <path fill-rule="evenodd" 
+                                d="M23.500,44.999 C11.073,44.999 1.000,34.926 1.000,22.500 C1.000,10.073 11.073,-0.000 23.500,-0.000 C35.926,-0.000 46.000,10.073 46.000,22.500 C46.000,34.926 35.926,44.999 23.500,44.999 ZM24.044,10.170 C18.962,10.170 20.120,16.199 19.951,18.397 C19.951,18.414 16.844,18.397 16.844,18.397 L16.844,22.488 L19.942,22.488 L19.942,36.884 L25.089,36.884 L25.078,22.488 L28.526,22.488 L29.202,18.375 L25.089,18.420 C25.089,15.500 24.863,14.312 26.570,14.312 C26.723,14.312 29.219,14.306 29.219,14.306 L29.224,10.170 L24.044,10.170 Z" />
+                        </g>
+                    </svg>
+
+                </a>
+
+
+                
+            </div>
+            <!-- Contacts -->
         </div>
     </footer>
 
-    <form id="for-button" class="user-form" action="/order.php" method="GET" enctype="multipart/form-data">
-        <input id="nameGuest" type="" value="" name="client_name" placeholder="Имя*" required />
-        <input type="email" placeholder="email" name="email" required>
-        <select name="place" required>
-            <option value="place 1">Выбор1</option>
-            <option value="place 2">Выбор2</option>
-            <option value="place 3">Выбор3</option>
-            <option value="place 4">Выбор4</option>
-            <option value="place 5">Выбор5</option>
-            <option value="place 6">Выбор6</option>
-            <option value="place 7">Выбор7</option>
-            <option value="place 8">Выбор8</option>
-            <option value="place 9">Выбор9</option>
-            <option value="place 10">Выбор10</option>
-        </select>
+    <form id="getPresent" class="user-form" action="/order.php" method="GET" enctype="multipart/form-data">
 
-        <input id="first" type="radio" value="1" name="some" />
-        <label for="first">Выбор 1</label>
-        <input id="second" type="radio" value="2" name="some" />
-        <label for="second">Выбор 2</label>
+        <div class="modal">
 
-        <textarea placeholder="Комментарий" name="textarea"></textarea>
+            <button id="closeGetPresent">X</button>
 
-        <input id="agree" type="checkbox" name="client_agreed" value="yes" required />
-        <label for="agree">Я согласен на обработку персональных данных</label>
+            <div class="modal__form">
 
-        <button id="sendPresentInfo" type="submit">Заказать</button>
+                <input class="present-form" id="nameGuest" type="" value="" name="client_name" placeholder="Имя*"
+                    required />
+                <input class="present-form" type="email" placeholder="email" name="email" required>
+                <select class="present-form" name="place" required>
+                    <option value="place 1">Выбор1</option>
+                    <option value="place 2">Выбор2</option>
+                    <option value="place 3">Выбор3</option>
+                    <option value="place 4">Выбор4</option>
+                    <option value="place 5">Выбор5</option>
+                    <option value="place 6">Выбор6</option>
+                    <option value="place 7">Выбор7</option>
+                    <option value="place 8">Выбор8</option>
+                    <option value="place 9">Выбор9</option>
+                    <option value="place 10">Выбор10</option>
+                </select>
 
-        <input id="upload-some" type="file" name="file" />
-        <label for="upload-some">Прикрепить файл</label>
+                <input id="first" type="radio" value="1" name="some" />
+                <label for="first">Выбор 1</label>
+                <input id="second" type="radio" value="2" name="some" />
+                <label for="second">Выбор 2</label>
 
+                <textarea class="present-form" placeholder="Комментарий" name="textarea"></textarea>
+
+                <input id="agree" type="checkbox" name="client_agreed" value="yes" required />
+                <label for="agree">Я согласен на обработку персональных данных</label>
+
+                <button id="sendPresentInfo" type="submit">Заказать</button>
+
+                <input class="present-form" id="upload-some" type="file" name="file" />
+                <label for="upload-some">Прикрепить файл</label>
+            </div>
+        </div>
     </form>
 
     <div id="orderForm">
@@ -1455,32 +1507,33 @@
             </div>
 
             <div class="places">
-                
+
             </div>
 
         </div>
     </div>
 
     <div id="choose_city">
-            <div class="modal">
-                <button id="closeChoose_city">X</button>
-    
-                <div class="modal__form">
-                    <div>
-                        <span>Ваш город</span>
-                        <input name="choose_city__form" class="choose_city__form" type="text" placeholder="Начните набирать название" />
-                    </div>
-                    <div id="search_result">
+        <div class="modal">
+            <button id="closeChoose_city">X</button>
 
-                    </div>
+            <div class="modal__form">
+                <div>
+                    <span>Ваш город</span>
+                    <input name="choose_city__form" class="choose_city__form" type="text"
+                        placeholder="Начните набирать название" />
                 </div>
-        
+                <div id="search_result">
+
+                </div>
             </div>
+
+        </div>
     </div>
-    
+
 
     <script src="js/getPresent.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/owl.carousel.min.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
@@ -1498,7 +1551,7 @@
                 }
             }
         })
-    </script>
+    </script> -->
     <script src="js/ajax.js"></script>
 </body>
 
