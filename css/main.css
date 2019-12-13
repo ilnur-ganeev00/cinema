@@ -924,7 +924,7 @@ button:hover {
 }
 
 .block-05 {
-    margin-bottom: 79px;
+    margin-bottom: 102px;
 }
 
 .block-05-container {
@@ -938,7 +938,7 @@ button:hover {
 }
 
 .block-05-text {
-    margin-bottom: 63px;
+    margin-bottom: 81px;
 }
 
 .block-06 {
@@ -1054,25 +1054,18 @@ button:hover {
 /** _Блок Преимущества */
 
 
-/** Мозаика фильмов на флексах */
+/** Мозаика фильмов */
 
-.block-05__flex-container {
-    width: 1030px;
-    margin: 0 auto;
-    padding: 0 18px;
+.movie-grid-container {
+    width: 970px;
+    box-sizing: border-box;
 }
 
-.block-05__flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -18px;
-}
-
-.block-05__item {
-    padding-left: 0;
-    padding-right: 41px;
-    padding-top: 18px;
-    padding-bottom: 23px;
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 41px;
+    grid-row-gap: 41px;
 }
 
 .block-05__inner1 {
@@ -1136,7 +1129,7 @@ button:hover {
     fill: green;
 }
 
-/** _Мозаика фильмов на флексах */
+/** _Мозаика фильмов */
 
 
 /** Компоненты */
