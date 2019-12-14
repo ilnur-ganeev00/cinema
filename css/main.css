@@ -608,11 +608,11 @@ textarea {
 /** _Шрифты */
 
 
-
 /** Общие стили */
 
 html {
     box-sizing: border-box;
+    font-size: 1.46412884vw;
 }
 
 *,
@@ -624,35 +624,36 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     color: #242424;
+    min-width: 320px;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 4rem;
     font-weight: 100;
     font-style: normal;
     color: #fff;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 h3 {
-    font-size: 35.03px;
+    font-size: 1.75rem;
     font-weight: 900;
     font-style: normal;
     text-align: center;
 }
 
 p {
-    font-size: 14px;
+    font-size: .7rem;
     font-weight: 300;
     font-style: normal;
 }
 
 p+p {
-    margin-top: 19px;
+    margin-top: .95rem;
 }
 
 a {
@@ -664,17 +665,17 @@ a {
 /** Стилизация форм и кнопок */
 
 form {
-    width: 400px;
+    width: 20rem;
 }
 
 input,
 textarea,
 select {
-    font-size: 19px;
+    font-size: .95rem;
     color: #6c6c6c;
-    padding: 15px 11px;
-    border: 1px solid #bebebe;
-    border-radius: 5px;
+    padding: .75rem .55rem;
+    border: .05rem solid #bebebe;
+    border-radius: .25rem;
     width: 100%;
     outline: 0;
     transition: .2s;
@@ -695,8 +696,8 @@ input[type="checkbox"] {
 
 input[type="radio"]+label,
 input[type="checkbox"]+label {
-    font-size: 16px;
-    padding-left: 23px;
+    font-size: .8rem;
+    padding-left: 1.15rem;
     position: relative;
 }
 
@@ -705,10 +706,10 @@ input[type="checkbox"]+label::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 1px;
-    width: 14px;
-    height: 14px;
-    border: 1px solid #000;
+    top: .05rem;
+    width: .7rem;
+    height: .7rem;
+    border: .05rem solid #000;
 }
 
 input[type="radio"]:checked+label::before,
@@ -716,10 +717,10 @@ input[type="checkbox"]:checked+label::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 1px;
-    width: 14px;
-    height: 14px;
-    border: 1px solid #000;
+    top: .05rem;
+    width: .7rem;
+    height: .7rem;
+    border: .05rem solid #000;
     background-color: #90d23d;
 }
 
@@ -729,38 +730,38 @@ input[type="radio"]+label::before {
 }
 
 textarea {
-    height: 250px;
+    height: 7.5rem;
     resize: none;
 }
 
 input[type="file"] {
     position: absolute;
     opacity: 0;
-    width: 1px;
-    height: 1px;
+    width: .05rem;
+    height: .05rem;
     z-index: 1;
     box-shadow: none;
     border: 0;
 }
 
 input[type="file"]+label {
-    font-size: 18px;
+    font-size: .9rem;
     color: #90d23d;
     position: relative;
-    border: 1px solid #90d23d;
-    padding: 15px;
+    border: .05rem solid #90d23d;
+    padding: .75rem;
     z-index: 2;
     background: #fff;
     width: 100%;
     display: block;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: .25rem;
 }
 
 input[type="button"],
 button {
-    border-right: 1px solid transparent;
-    border-bottom: 1px solid transparent;
+    border-right: .05rem solid transparent;
+    border-bottom: .05rem solid transparent;
 }
 
 button {
@@ -768,15 +769,15 @@ button {
     outline: none;
     display: inline-block;
     color: white;
-    padding: 20px 30px;
-    margin: 10px 20px;
-    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin: .5rem 1rem;
+    border-radius: .5rem;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: .1rem;
     background-image: linear-gradient(to right, rgb(158, 239, 185) 0%, #90d23d 51%, rgb(158, 239, 185) 100%);
     background-size: 200% auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     transition: .5s;
 }
 
@@ -794,14 +795,14 @@ button:hover {
 }
 
 .welcome__subtitle2-2 {
-    font-size: 40px;
-    margin-bottom: 35px;
+    font-size: 2rem;
+    margin-bottom: 1.75rem;
 }
 
 .block-04__subtitle2-3 {
     font-weight: 900;
     color: #fff;
-    margin-bottom: 61px;
+    margin-bottom: 3.05rem;
 }
 
 /** _Заголовки */
@@ -813,13 +814,14 @@ button:hover {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 54px;
-    padding-bottom: 364px;
-    margin-bottom: 79px;
+    padding-top: 2.7rem;
+    padding-bottom: 18.2rem;
+    margin-bottom: 3.95rem;
     position: relative;
+    /* min-height: 100vh; */
 }
 .block-01-container {
-    width: 1030px;
+    max-width: 51.5rem;
     margin: auto;
 }
 
@@ -840,36 +842,36 @@ button:hover {
 }
 
 .block-02-container {
-    width: 1030px;
+    max-width: 51.5rem;
     margin: auto;
     position: relative;
-    margin-bottom: 121px;
+    margin-bottom: 6.05rem;
 }
 
 .welcome {
-   width: 516px;
-   padding: 35px 32px 42px;
+   width: 50%;
+   padding: 1.75rem 1.6rem 2.1rem;
    background: #fff; 
-   box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
+   box-shadow: 0 1px 2px 0 rgba(35, 31, 32, 0.65);
    position: absolute;
-   top: -208px;
-   right: -1px;
+   top: -10.4rem;
+   right: -.05rem;
 }
 
 .welcome__sub {
-    width: 394px;
+    width: 19.7rem;
     line-height: 1.2;
 }
 
 .advantages-subtitle {
-    margin-bottom: 123px;
+    margin-bottom: 6.15rem;
 }
 
 .block-03 {
-    margin-bottom: 151px;
+    margin-bottom: 7.55rem;
 }
 .block-03-container {
-    width: 1030px;
+    max-width: 51.5rem;
     margin: auto;
 }
 
@@ -877,22 +879,22 @@ button:hover {
     background-image: url(../images/ticket_background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 141px;
-    padding-bottom: 173px;
+    padding-top: 7.05rem;
+    padding-bottom: 8.65rem;
     position: relative;
-    margin-bottom: 89px;
+    margin-bottom: 4.45rem;
 }
 .block-04-container {
-    width: 1030px;
+    max-width: 51.5rem;
     margin: auto;
     text-align: right;
-    padding-left: 362px;
+    padding-left: 18.1rem;
 }
 
 .block-04-gift-image {
     position: absolute;
-    top: -64px;
-    left: 160px;
+    top: -3.2rem;
+    left: 8rem;
 }
 
 .block-04__info {
@@ -900,22 +902,22 @@ button:hover {
 }
 
 .block-04__last {
-    margin-bottom: 28px;
+    margin-bottom: 1.4rem;
 }
 
 .block-04__get-gift {
     background: #90d23d;
-    height: 55px;
-    width: 220px;
-    border-radius: 15px;
+    height: 2.75rem;
+    width: 11rem;
+    border-radius: 0.75rem;
     text-align: center;
     margin-left: auto;
-    padding-top: 19px;
+    padding-top: .95rem;
 }
 
 .block-04__link {
     color: #fff;
-    font-size: 18px;
+    font-size: .9rem;
 }
 
 .block-04__link:hover{
@@ -924,43 +926,41 @@ button:hover {
 }
 
 .block-05 {
-    margin-bottom: 102px;
+    margin-bottom: 5.1rem;
 }
 
 .block-05-container {
-    width: 1030px;
+    max-width: 51.5rem;
     margin: auto;
-    padding-left: 29px;
+    padding-left: 1.45rem;
 }
 
 .block-05__subtitle2-5 {
-    margin-bottom: 42px;
+    margin-bottom: 2.1rem;
 }
 
 .block-05-text {
-    margin-bottom: 81px;
+    margin-bottom: 4.05rem;
 }
 
 .block-06 {
-    height: 450px;
+    height: 22.5rem;
     background: grey;
 }
 .block-06-container {
-    width: 1030px;
+    max-width: 51.5rem;
     margin: auto;
-    font-size: 400px;
+    font-size: 20rem;
     text-align: center;
 }
 
 .block-07 {
-    height: 220px;
+    height: 11rem;
     background: #90d23d;
 }
 .block-07-container {
-    width: 1030px;
+    max-width: 51.5rem;
     margin: auto;
-    /* font-size: 200px; */
-    /* text-align: center; */
 }
 
 /** _Сетка макета */
@@ -973,33 +973,33 @@ button:hover {
 
 .advantages-col1 {
     float: left;
-    width: 296px;
+    width: 14.8rem;
 }
 .advantages-col2 {
     float: left;
-    width: 433px;
+    width: 21.65rem;
 }
 .advantages-col3 {
     float: left;
-    width: 300px;
+    width: 15rem;
 }
 
 .advantages-image-wrap {
-    height: 211px;
+    height: 10.55rem;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
 }
 
 .advantages-image-wrap2 {
-    height: 211px;
+    height: 10.55rem;
     position: relative;
-    margin-bottom: 44px;
+    margin-bottom: 2.2rem;
 }
 
 .advantages-image-wrap3 {
-    height: 211px;
+    height: 10.55rem;
     position: relative;
-    margin-bottom: 44px;
+    margin-bottom: 2.2rem;
 }
 
 .advantages-image-wrap__img {
@@ -1017,7 +1017,7 @@ button:hover {
     right: 0;
     top: 0;
     bottom: 0;
-    margin-left: 133px;
+    margin-left: 6.65rem;
 }
 
 .advantages-image-wrap__img3 {
@@ -1025,7 +1025,7 @@ button:hover {
     left: 0;
     right: 0;
     top: 0;
-    bottom: -30px;
+    bottom: -1.5rem;
     margin: auto;
 }
 
@@ -1035,15 +1035,15 @@ button:hover {
 }
 
 .advantages-col1__subtitle3-2 {
-    margin-bottom: 22px;
+    margin-bottom: 1.1rem;
 }
 
 .advantages-col2__subtitle3-2 {
-    margin-bottom: 18px;
+    margin-bottom: .9rem;
 }
 
 .advantages-col3__subtitle3-2 {
-    margin-bottom: 18px;
+    margin-bottom: .9rem;
 }
 
 
@@ -1057,15 +1057,15 @@ button:hover {
 /** Мозаика фильмов */
 
 .movie-grid-container {
-    width: 970px;
+    max-width: 48.5rem;
     box-sizing: border-box;
 }
 
 .movie-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 41px;
-    grid-row-gap: 41px;
+    grid-column-gap: 2.05rem;
+    grid-row-gap: 2.05rem;
 }
 
 .block-05__inner1 {
@@ -1080,8 +1080,8 @@ button:hover {
     height: 100%;
     bottom: -100%;
     background: rgba(144, 210, 61, .8);
-    border-radius: 12px;
-    padding: 23px;
+    border-radius: .6rem;
+    padding: 1.15rem;
     display: flex;
     flex-direction: column;
     transition: .2s;
@@ -1092,14 +1092,14 @@ button:hover {
 }
 
 .block-05__text1 {
-    font-size: 35px;
+    font-size: 1.75rem;
     font-weight: 900;
     color: #fff;
-    margin: 0 0 10px;
+    margin: 0 0 .5rem;
 }
 
 .block-05__text2{
-    font-size: 18px;
+    font-size: .9rem;
     color: #fff;
     flex: 1;
 }
@@ -1109,15 +1109,15 @@ button:hover {
 }
 
 .block-05__link1 + .block-05__link1{
-    margin-left: 6px;
+    margin-left: .3rem;
 }
 
 .block-05__hr {
-    width: 83px;
-    height: 6px;
+    width: 4.15rem;
+    height: .3rem;
     border: 0;
     box-shadow: none;
-    margin: 0 0 15px;
+    margin: 0 0 .75rem;
     background: #fff;
 }
 
@@ -1137,7 +1137,7 @@ button:hover {
 .navigation__ref {
     text-transform: uppercase;
     color: #fff;
-    font-size: 15px;
+    font-size: .75rem;
     font-weight: 100;
 }
 
@@ -1147,12 +1147,15 @@ button:hover {
 
 .logo {
     display: inline-block;
-    /* padding-top: 18px; */
+}
+
+.logo__image {
+    width: 9.4rem;
 }
 
 .navigation {
     display: inline-block;
-    margin-left: 55px;
+    margin-left: 2.75rem;
 }
 
 .navigation__item {
@@ -1161,9 +1164,9 @@ button:hover {
 
 .city-location {
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 2.5rem;
     color: #fff;
-    font-size: 15px;
+    font-size: .75rem;
     font-weight: 100;
 }
 
@@ -1181,31 +1184,22 @@ button:hover {
 }
 
 .logo-and-nav {
-    margin-bottom: 163px;
+    margin-bottom: 8.15rem;
 }
 
 .topic__subtitle1-1 {
-    margin-bottom: 12px;
+    margin-bottom: .6rem;
 }
 
 .navigation__item_1 {
-    margin-left: 115px;
+    margin-left: 5.75rem;
 }
 
-.navigation__item_2 {
-    margin-left: 15px;
-}
-
-.navigation__item_3 {
-    margin-left: 15px;
-}
-
-.navigation__item_4 {
-    margin-left: 15px;
-}
-
+.navigation__item_2,
+.navigation__item_3,
+.navigation__item_4,
 .navigation__item_5 {
-    margin-left: 15px;
+    margin-left: .75rem;
 }
 
 
@@ -1219,20 +1213,20 @@ button:hover {
 
 .movie-list {
     padding: 0;
-    margin-bottom: 41px;
+    margin-bottom: 2.05rem;
 }
 
 .movie-list__header {
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 700;
-    margin: 0 0 82px 0;
+    margin: 0 0 4.1rem 0;
     text-align: center;
 }
 
 .movie-list__table {
     width: 100%;
     border-collapse: collapse;
-    border-radius: 15px;
+    border-radius: .75rem;
     overflow: hidden;
     color: #fff;
 }
@@ -1243,44 +1237,39 @@ button:hover {
 }
 
 .movie-list__table th {
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 700;
     background: #a3cc40;
-    padding-top: 22px;
-    padding-bottom: 21px;
+    padding-top: 1.1rem;
+    padding-bottom: 1.05rem;
     text-align: center;
 }
 
 .movie-list__tbody td {
-    font-size: 22px;
+    font-size: 1.1rem;
     font-weight: 400;
-    padding-top: 28px;
-    padding-bottom: 25px;
+    padding-top: 1.4rem;
+    padding-bottom: 1.25rem;
     vertical-align: top;
 }
 
 .movie-list__first-col {
-    width: 230px;
+    width: 11.5rem;
     text-align: center;
 }
 
 .movie-list__second-col {
-    width: 310px;
+    width: 15.5rem;
 }
 
 .movie-list__third-col {
-    width: 360px;
+    width: 18rem;
 }
 
 .movie-list__fourth-col {
-    width: 130px;
+    width: 6.5rem;
     text-align: center;
 }
-
-/* .movie-list__table th:nth-child(2),
-.movie-list__table td:nth-child(2) {
-    padding-left: 66px;
-} */
 
 .movie-list__tbody {
     background: #4b4d4f;
@@ -1297,9 +1286,9 @@ button:hover {
 #triangle-up {
     width: 0;
     height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 10px solid white;
+    border-left: .35rem solid transparent;
+    border-right: .35rem solid transparent;
+    border-bottom: .5rem solid white;
     vertical-align: middle;
     display: inline-block;
 }
@@ -1307,9 +1296,9 @@ button:hover {
 #triangle-down {
     width: 0;
     height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 10px solid white;
+    border-left: .35rem solid transparent;
+    border-right: .35rem solid transparent;
+    border-top: .5rem solid white;
     vertical-align: middle;
     display: inline-block;
 }
@@ -1338,45 +1327,45 @@ button:hover {
     top: 0;
     left: 0;
     z-index: inherit;
-    padding-top: 20px;
+    padding-top: 1rem;
 }
 
 #closeOrderForm {
     position: absolute;
-    right: 5px;
-    font-size: 30px;
-    top: 5px;
+    right: .25rem;
+    font-size: 1.5rem;
+    top: .25rem;
     cursor: pointer;
 }
 
 #orderForm .modal {
     background-color: #F8F8FF;
     margin: 0 auto;
-    width: 1000px;
-    border-radius: 10px;
-    padding: 10px;
+    width: 50rem;
+    border-radius: .5rem;
+    padding: .5rem;
     position: relative;
 }
 
 .film-form {
     width: auto;
-    height: 20px;
+    height: 1rem;
 }
 
 .places {
     display: flex;
-    margin: 20px;
+    margin: 1rem;
 }
 
 .placeDiv {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #000;
-    font-size: 20px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: .1rem solid #000;
+    font-size: 1rem;
     font-weight: bold;
-    margin-right: 5px;
+    margin-right: .25rem;
     text-align: center;
-    border-radius: 10px;
+    border-radius: .5rem;
 }
 
 .placeBooked {
@@ -1407,30 +1396,30 @@ button:hover {
     top: 0;
     left: 0;
     z-index: inherit;
-    padding-top: 20px;
+    padding-top: 1rem;
 }
 
 #closeChoose_city {
     position: absolute;
-    right: 5px;
-    font-size: 30px;
-    top: 5px;
+    right: .25rem;
+    font-size: 1.5rem;
+    top: .25rem;
     cursor: pointer;
 }
 
 #choose_city .modal {
     background-color: #F8F8FF;
     margin: 0 auto;
-    width: 1000px;
-    border-radius: 10px;
-    padding: 10px;
+    width: 50rem;
+    border-radius: .5rem;
+    padding: .5rem;
     position: relative;
-    height: 150px;
+    height: 7.5rem;
 }
 
 .choose_city__form {
-    width: 300px;
-    height: 20px;
+    width: 15rem;
+    height: 1rem;
 }
 
 /** _Выбор города  */
@@ -1448,24 +1437,24 @@ button:hover {
     top: 0;
     left: 0;
     z-index: inherit;
-    padding-top: 20px;
+    padding-top: 1rem;
 }
 
 #closeGetPresent {
     position: absolute;
-    right: 5px;
-    font-size: 30px;
-    top: 5px;
+    right: .25rem;
+    font-size: 1.5rem;
+    top: .25rem;
     cursor: pointer;
 }
 
 #getPresent .modal {
     background-color: #F8F8FF;
     margin: 0 auto;
-    width: 450px;
-    border-radius: 10px;
-    padding: 10px;
-    padding-top: 100px;
+    width: 22.5rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    padding-top: 5rem;
     position: relative;
 }
 
