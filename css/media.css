@@ -1,0 +1,121 @@
+/** Медиа правила */
+
+@media screen and (max-width:1200px) {
+    p {
+        font-size: .81rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container {
+        width: 38.5rem;
+    }
+    .navigation {
+        margin-left: .25rem;
+        display: inline-block;
+    }
+    #burgerNav {
+        display: inline-block;
+    }
+    .city-location {
+        margin-left: .3rem;
+    }
+    .navigation__item {
+        margin-left: .1rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2.1rem;
+    }
+    .welcome {
+        width: 57%;
+        top: -14.3rem;
+    }
+    /* .movie-list__table-wrap {
+        overflow: auto;
+    }
+    .movie-list__table {
+        width: 800px;
+    } */
+    .block-04-gift-image {
+        left: 1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 30rem;
+    }
+    .movie-list__table-wrap {
+        overflow: auto;
+    }
+    .movie-list__table {
+        width: 800px;
+    }
+    .navigation-burger span,
+    .navigation-burger::before,
+    .navigation-burger::after {
+        content: '';
+        width: 100%;
+        background: #fff;
+        height: 1px;
+        display: block;
+        position: absolute;
+    }
+    .navigation-burger {
+        position: relative;
+        width: 20px;
+        height: 21px;
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+    .navigation-burger span {
+        top: 50%;
+    }
+    .navigation-burger::before {
+        top: 0;
+    }
+    .navigation-burger::after {
+        bottom: 0;
+    }
+    .burgerNav {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding: 3rem 1rem;
+        background: rgba(0, 0, 0, .7);
+        z-index: 2;
+    }
+    .city-location {
+        margin-left: 10rem;
+    }
+    .navigation__item {
+        display: block;
+        margin: .5rem;
+    }
+    .welcome {
+        position: static;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .block-01 {
+        margin-bottom: 0;
+    }
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+
+}

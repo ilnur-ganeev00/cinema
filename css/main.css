@@ -810,6 +810,11 @@ button:hover {
 
 /** Сетка макета */
 
+.container {
+    max-width: 51.5rem;
+    margin: auto;
+}
+
 .block-01 {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
@@ -819,10 +824,6 @@ button:hover {
     margin-bottom: 3.95rem;
     position: relative;
     /* min-height: 100vh; */
-}
-.block-01-container {
-    max-width: 51.5rem;
-    margin: auto;
 }
 
 .block-01:after {
@@ -842,8 +843,6 @@ button:hover {
 }
 
 .block-02-container {
-    max-width: 51.5rem;
-    margin: auto;
     position: relative;
     margin-bottom: 6.05rem;
 }
@@ -870,10 +869,6 @@ button:hover {
 .block-03 {
     margin-bottom: 7.55rem;
 }
-.block-03-container {
-    max-width: 51.5rem;
-    margin: auto;
-}
 
 .block-04 {
     background-image: url(../images/ticket_background.png);
@@ -885,8 +880,6 @@ button:hover {
     margin-bottom: 4.45rem;
 }
 .block-04-container {
-    max-width: 51.5rem;
-    margin: auto;
     text-align: right;
     padding-left: 18.1rem;
 }
@@ -930,8 +923,6 @@ button:hover {
 }
 
 .block-05-container {
-    max-width: 51.5rem;
-    margin: auto;
     padding-left: 1.45rem;
 }
 
@@ -948,8 +939,6 @@ button:hover {
     background: grey;
 }
 .block-06-container {
-    max-width: 51.5rem;
-    margin: auto;
     font-size: 20rem;
     text-align: center;
 }
@@ -957,10 +946,6 @@ button:hover {
 .block-07 {
     height: 11rem;
     background: #90d23d;
-}
-.block-07-container {
-    max-width: 51.5rem;
-    margin: auto;
 }
 
 /** _Сетка макета */
@@ -1017,6 +1002,7 @@ button:hover {
     right: 0;
     top: 0;
     bottom: 0;
+    margin: auto;
     margin-left: 6.65rem;
 }
 
@@ -1145,9 +1131,14 @@ button:hover {
     color: #90d23d;
 }
 
-.logo {
+
+.logo,
+.navigation-wrap,
+.navigation-burger {
     display: inline-block;
 }
+
+
 
 .logo__image {
     width: 9.4rem;
@@ -1160,6 +1151,7 @@ button:hover {
 
 .navigation__item {
     display: inline-block;
+    margin-left: .75rem;
 }
 
 .city-location {
@@ -1191,22 +1183,9 @@ button:hover {
     margin-bottom: .6rem;
 }
 
-.navigation__item_1 {
-    margin-left: 5.75rem;
-}
-
-.navigation__item_2,
-.navigation__item_3,
-.navigation__item_4,
-.navigation__item_5 {
-    margin-left: .75rem;
-}
-
-
 /** _Компоненты */
 
 
-/** Медиа правила */
 
 
 /** Таблица */
@@ -1459,3 +1438,20 @@ button:hover {
 }
 
 /** _Получение подарка  */
+
+
+/** Меню-бургер  */
+
+#closeBurger {
+    display: none;
+    position: fixed;
+    left: 74px;
+    top: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: .2rem .8rem;
+    z-index: 3;
+    background: #6c6c6c;
+}
+
+/** _Меню-бургер  */
