@@ -96,6 +96,9 @@
         background: rgba(0, 0, 0, .7);
         z-index: 2;
     }
+    .showBurgerNav {
+        display: block;
+    }
     .city-location {
         margin-left: 10rem;
     }
