@@ -48,6 +48,22 @@
     .block-04-gift-image {
         left: 1rem;
     }
+    .block-05__text1 {
+        font-size: 1.05rem;
+    }
+    .block-05__text2 {
+        font-size: 0.8rem;
+    }
+    .block-04__subtitle2-3 {
+        font-size: 1.8rem;
+    }
+    .block-04-wrap {
+        top: -5.1rem;
+        left: 6.5rem;
+    }
+    .logo__image {
+        width: 8.2rem;
+    }
 }
 
 @media screen and (max-width:600px) {

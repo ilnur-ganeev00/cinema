@@ -694,6 +694,14 @@ input[type="checkbox"] {
     display: none;
 }
 
+#agree {
+    width: 1px;
+    height: 1px;
+    display: block;
+    margin-top: 0.8rem;
+}
+
+
 input[type="radio"]+label,
 input[type="checkbox"]+label {
     font-size: .8rem;
@@ -884,10 +892,15 @@ button:hover {
     padding-left: 18.1rem;
 }
 
-.block-04-gift-image {
+.block-04-wrap {
     position: absolute;
     top: -3.2rem;
     left: 8rem;
+    max-width: 17.6rem;
+}
+
+.block-04-wrap__image {
+    width: 100%;
 }
 
 .block-04__info {
@@ -946,6 +959,8 @@ button:hover {
 .block-07 {
     height: 11rem;
     background: #90d23d;
+    font-size: 10rem;
+    text-align: center;
 }
 
 /** _Сетка макета */
@@ -1057,6 +1072,10 @@ button:hover {
 .block-05__inner1 {
     position: relative;
     overflow: hidden;
+}
+
+.block-05__poster {
+    width: 100%;
 }
 
 .block-05__description {
@@ -1307,6 +1326,7 @@ button:hover {
     left: 0;
     z-index: inherit;
     padding-top: 1rem;
+    z-index: 1;
 }
 
 #closeOrderForm {
@@ -1376,6 +1396,7 @@ button:hover {
     left: 0;
     z-index: inherit;
     padding-top: 1rem;
+    z-index: 1;
 }
 
 #closeChoose_city {
@@ -1417,6 +1438,7 @@ button:hover {
     left: 0;
     z-index: inherit;
     padding-top: 1rem;
+    z-index: 1;
 }
 
 #closeGetPresent {
