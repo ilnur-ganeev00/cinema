@@ -2,10 +2,14 @@
 
 // var_dump($_POST);
 
+session_start();
+
 if (validate($_POST)) {
     $client = New Client;
     $client->checkData($_POST);
     // var_dump($client);
+
+    $_SESSION['name'] = $_POST['name'];
 
     setcookie('clientName', $_POST['clientName'], 0);
 
