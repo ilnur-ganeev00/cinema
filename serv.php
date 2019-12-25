@@ -4,6 +4,8 @@
 
 session_start();
 
+
+
 if (validate($_POST)) {
     $client = New Client;
     $client->checkData($_POST);
