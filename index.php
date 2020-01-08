@@ -22,6 +22,10 @@
 </head>
 
 <body>
+    <?php if (isset($_GET['error_form'])) { ?>
+        <p><?php echo $_GET['error_form'] ?></p>
+    <?php } ?>
+
     <header class="block-01">
         <div class="block-01-container container">
             <div class="logo-and-nav">
@@ -1439,8 +1443,10 @@
 
             <div class="modal__form">
 
-                <input class="present-form" id="nameGuest" type="" value="" name="clientName" placeholder="Имя*"
-                    required />
+                <input class="present-form" id="nameGuest" type="" value="<?php echo isset($_COOKIE['clientName']) ? $_COOKIE['clientName'] : ''?>" name="clientName" placeholder="Имя*" required />
+                <?php if (isset($_GET['error_name']) && $_GET['error_name']) { ?>
+                    <p class="present-form__error"><?php echo $_GET['error_name'] ?></p>
+                <?php } ?>
                 <input class="present-form" type="email" placeholder="email" name="email" required>
                 <select class="present-form" name="place" required>
                     <option value="place 1">Выбор1</option>

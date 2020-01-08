@@ -67,6 +67,9 @@ jQuery(($)=> {
 
 jQuery(document).ready(($) => {
     // console.log('start request');
+
+    // document.cookie = 'clientName=';
+
     getRequest(SYPEX_URL, function(){
         $answer = $.parseJSON(this)
         let city = $answer['city']['name_ru'];

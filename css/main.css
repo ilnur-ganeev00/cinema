@@ -1459,6 +1459,19 @@ button:hover {
     position: relative;
 }
 
+.present-form__error {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.thanks {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 15vh;
+}
+
+
 /** _Получение подарка  */
 
 
